@@ -34,6 +34,12 @@
 		blockquote {
 			font-size: 100%;
 		}
+		p.larger {
+		   font-size: 18px;
+		}
+		hr {
+			border-color: black;
+		}
 		</style>
 	</head>
 
@@ -41,15 +47,16 @@
 		<div class="container">
 			<div class="well">
 				<div class="row">
-					<div class="col-md-1">
+					<div class="col-md-2">
 					<!-- using carlsonp @ ISU address for MD5 hash -->
-					<img class="img-rounded" alt="Gravatar Image" title="Gravatar Image" src="http://www.gravatar.com/avatar/01423fabe018684981d49d33cc1e8a4f?s=80" />
+					<!-- <img class="img-rounded" alt="Gravatar Image" title="Gravatar Image" src="http://www.gravatar.com/avatar/01423fabe018684981d49d33cc1e8a4f?s=80" /> -->
+					<img class="img-rounded" alt="Headshot" title="Headshot" src="images/headshot.jpg" />
 					</div>
-					<div class="col-md-11">
+					<div class="col-md-10">
 					<h4>Hi, my name is Patrick Carlson and I'm a PhD candidate in <a target="_blank" href="http://hci.iastate.edu">Human-Computer Interaction</a> (HCI) at 
 					<a target="_blank" href="http://www.iastate.edu">Iowa State University</a> scheduled to graduate in August 2014. My major adviser is
 					<a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/">Dr. Judy M. Vance</a>. My undergraduate education was at
-					<a target="_blank" href="http://www.simpson.edu">Simpson College</a> where I received a Bachelor of Arts cum laude with a double major in Computer Science and Psychology.</h4>
+					<a target="_blank" href="http://www.simpson.edu">Simpson College</a> where I received a Bachelor of Arts, cum laude, with a double major in Computer Science and Psychology.</h4>
 					</div>
 				</div>
 			</div>
@@ -69,7 +76,7 @@
 					<h4 class="title">About Me</h4>
 					<div class="row">
 						<div class="col-md-6">
-						<p><a href="resume.pdf">Resume (pdf)</a></p>
+						<p class="larger"><a href="resume.pdf">Resume (pdf)</a></p>
 						<p>Contact</p>
 						<ul>
 							<li>Email: <a href="mailto:carlsonp@iastate.edu">carlsonp@iastate.edu</a></li>
@@ -153,6 +160,8 @@
 				<div class="tab-pane fade" id="research">
 					<h4 class="title">Research</h4>
 					<h4>Improving Socialization of New Developers in Open Source Software: Harnessing Social and Technical Datamining</h4>
+					<img src="images/SocialTechnicalCongruence.png" class="img-responsive" alt="Open Source Tool">
+					<br>
 					<p>My PhD thesis topic involves looking at datamining <a target="_blank" href="https://www.mozilla.org/">Mozilla</a>
 					and <a target="_blank" href="http://www.kde.org/">KDE</a>, two large Open Source communities.  Through analysis
 					of Git version control history, email mailing lists, and source code files, this parsed information is stored
@@ -166,6 +175,16 @@
 					members was developed.  This paper is currently under review.</p>
 					<p>An online tool to help visualize this information for developers is currently being developed and will
 					be released soon.</p>
+					<p>Publications:</p>
+					<ul>
+						<li><b>*Under Review*</b> Patrick Carlson and Judy M. Vance, <i>Understanding Open Source Socialization
+						in the Mozilla and KDE Communities</i>, ACM GROUP</li>
+						<li>Patrick Carlson and Nan Xiao, <i>Experience and Recommendations for Distributed Software
+						Development</i>, <a target="_blank" href="http://dx.doi.org/10.1109/CTGDSD.2012.6226945">In Proceedings of the
+						International Conference on Software Engineering (ICSE)
+						Workshop on Collaborative Teaching of Globally Distributed Software Development</a>, pages 1–4,
+						Zurich, Switzerland, ACM.</li>
+					</ul>
 					<hr>
 					<h4>Using Bimanual Haptics in Virtual Assembly Tasks</h4>
 					<img src="images/GOALI_1.jpg" class="img-responsive" alt="Bimanual Haptics">
@@ -174,8 +193,22 @@
 					other graduate students on research using various configurations of bimanual haptic devices to examine their
 					effectiveness in virtual assembly tasks. One of the haptic devices we use is the <a target="_blank" href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic Touch (formerly
 					Sensable Phantom Omni)</a>. This research aims to improve the training of assembly tasks through the utilization
-					of haptic devices, virtual reality, and accurate physics calculations. You can find more details, images,
+					of haptic devices, virtual reality, and accurate physics calculations. We're also examining how much learning
+					transfer takes place in using this technology for virtual training.
+					You can find more details, images,
 					and videos <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/RESEARCH/GOALIHybrid/">here</a>.</p>
+					<p>Publications:</p>
+					<ul>
+						<li><b>*Under Review*</b> Patrick Carlson, Anicia Peters, Stephen B. Gilbert, Judy M. Vance, and Andy Luse, <i>Virtual
+						Training: Learning Transfer of Assembly Tasks</i>, IEEE Transactions on Visualization and Computer Graphics</li>
+						<li>Mike Oren, Patrick Carlson, Stephen Gilbert, and Judy M. Vance, <i>Puzzle Assembly Training:
+						Real World vs. Virtual Environment</i>, <a target="_blank" href="http://dx.doi.org/10.1109/VR.2012.6180873">In Proceedings
+						of the IEEE 2012 Virtual Reality Conference</a>,
+						pages 1–4, Orange County, California, IEEE.</li>
+						<li>Judy M. Vance, Stephen B. Gilbert, Michael Oren, Ryan Pavlik, and Patrick Carlson,
+						<i>GOALI: A Hybrid Method to Support Natural Interaction of Parts in a Virtual Environment</i>, In NSF
+						Engineering Research and Innovation Conference Proceedings, pages 1–4, Atlanta, Georgia.</li>
+					</ul>
 					<hr>
 					<h4>Virtual Shopping Study</h4>
 					<img src="images/C6_user.png" class="img-responsive" alt="Virtual Shopping Study">
@@ -183,8 +216,19 @@
 					<p>Over the summer of 2010, I coordinated and co-advised three undergraduate Research Experience for Undergraduates (REU) students in a project to
 					create a physical mockup of a shopping cart that was then used in a virtual reality user study.  You can find
 					more details, images, and videos <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/RESEARCH/VRShopping/">here</a>.</p>
+					<p>Publications:</p>
+					<ul>
+						<li>Patrick Carlson, Carl Kirpes, Ryan A. Pavlik, Judy M. Vance, Livien Yin, Terrence Scott-
+						Cooper, and Troy Lambert, <i>Comparison of Single-Wall Versus Multi-Wall Immersive Environments
+						to Support a Virtual Shopping Experience</i>, <a target="_blank"
+						href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1623673">
+						In Proceedings of the ASME 2011 World Conference on
+						Innovative Virtual Reality (WINVR2011)</a>, pages 1–5, Milan, Italy, ASME.</li>
+					</ul>
 					<hr>
 					<h4>Undergraduate Psychology Capstone - Examining The Linux Desktop</h4>
+					<img src="images/compiz-fusion_cube.jpg" class="img-responsive" alt="Compiz Fusion Cube">
+					<br>
 					<p>My undergraduate Psychology capstone involved two semesters of work. The first semester was spent
 					creating an experiment, gathering the required materials, and making sure the design was solid. The second
 					semester I implemented the experiment and analyzed the data. The experiment focused on
@@ -203,6 +247,19 @@
 					<h4 class="title">Publications</h4>
 					<h4>Papers:</h4>
 					<ul>
+						<li>2014
+							<ul>
+								<li><b>*Under Review*</b> Patrick Carlson and Judy M. Vance, <i>Understanding Open Source Socialization
+								in the Mozilla and KDE Communities</i>, ACM GROUP</li>
+							</ul>
+						</li>
+						<li>2013
+							<ul>
+								<li><b>*Under Review*</b> Patrick Carlson, Anicia Peters, Stephen B. Gilbert, Judy M. Vance, and Andy Luse, <i>Virtual
+								Training: Learning Transfer of Assembly Tasks</i>, IEEE Transactions on Visualization
+								and Computer Graphics</li>
+							</ul>
+						</li>
 						<li>2012
 							<ul>
 								<li>Mike Oren, Patrick Carlson, Stephen Gilbert, and Judy M. Vance, <i>Puzzle Assembly Training:
@@ -233,33 +290,36 @@
 					<ul>
 						<li>2013
 							<ul>
-								<li>Carlson, Patrick & Vance, Judy M. (2013, April). Who Should I Contact?: Helping New Developers
-								Find Experts. Poster presented at the Emerging Technologies Conference, Ames, IA. <b>*Awarded
+								<li>Carlson, Patrick & Vance, Judy M. (2013, April). <a target="_blank" href="posters/ETC_Poster_2013.pdf">
+								Who Should I Contact?: Helping New Developers Find Experts</a>. Poster presented at the
+								Emerging Technologies Conference, Ames, IA. <b>*Awarded
 								most interesting research project*</b></li>
 							</ul>
 						</li>
 						<li>2012
 							<ul>
-								<li>Peters, Anicia & Carlson, Patrick & Gilbert, Stephen & Vance, Judy M. (2012, April). A Hybrid
-								Method to Support Natural Interaction of Parts in a Virtual Environment. Poster presented at the
+								<li>Peters, Anicia & Carlson, Patrick & Gilbert, Stephen & Vance, Judy M. (2012, April). <a target="_blank"
+								href="posters/ETC_Poster_2012.pdf">A Hybrid
+								Method to Support Natural Interaction of Parts in a Virtual Environment</a>. Poster presented at the
 								Emerging Technologies Conference, Ames, IA. <b>*Awarded most interesting research project*</b></li>
+								<li>Vance, Judy M. & Gilbert, Stephen & Oren, Michael & Pavlik, Ryan & Carlson, Patrick. (2012,
+								July). <a target="_blank" href="posters/CMMI_2012.pdf">GOALI: A Hybrid Method to Support Natural Interaction of
+								Parts in a Virtual Environment</a>. Poster presented at the NSF Engineering Research and Innovation Conference,
+								Atlanta, GA.</li>
 							</ul>
 						</li>
 						<li>2011
 							<ul>
-								<li>Carlson, Patrick & Vance, Judy M. & Nguyen, Tien & Blankenship, Kevin. (2011, April). Social
-								Technical Congruence: The Link Between Social Science and Technology. Poster presented at
-								the Emerging Technologies Conference, Ames, IA.</li>
-								<li>Vance, Judy M. & Gilbert, Stephen & Oren, Michael & Pavlik, Ryan & Carlson, Patrick. (2011,
-								January). GOALI: A Hybrid Method to Support Natural Interaction of Parts in a Virtual
-								Environment. Poster presented at the NSF Engineering Research and Innovation Conference,
-								Atlanta, GA.</li>
+								<li>Carlson, Patrick & Vance, Judy M. & Nguyen, Tien & Blankenship, Kevin. (2011, April). <a target="_blank"
+								href="posters/ETC_2011.pdf">Social Technical Congruence: The Link Between Social Science and Technology</a>.
+								Poster presented at	the Emerging Technologies Conference, Ames, IA.</li>
 							</ul>
 						</li>
 						<li>2010
 							<ul>
-								<li>Carlson, Patrick & Vance, Judy M. (2010, May). An Evaluation of Asymmetric Interfaces for
-								Bimanual Virtual Assembly With Haptics. Poster presented at the ASME World Conference on
+								<li>Carlson, Patrick & Vance, Judy M. (2010, May). <a target="_blank" href="posters/WINVR_2010.pdf">
+								An Evaluation of Asymmetric Interfaces for
+								Bimanual Virtual Assembly With Haptics</a>. Poster presented at the ASME World Conference on
 								Innovative Virtual Reality, Ames, IA.</li>
 							</ul>
 						</li>
@@ -283,7 +343,7 @@
 					<p>In working with <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/">Dr. Judy Vance</a> and other
 					graduate students, I have contributed to the following <a target="_blank" href="https://github.com/vancegroup">Vance Group</a> software projects:</p>
 					<ul>
-						<li>Open Source dataming tool (not yet released)</li>
+						<li>Open Source datamining tool (not yet released)</li>
 						<li><a target="_blank" href="https://github.com/vancegroup/vr-jugglua">vr-jugglua</a></li>
 						<li>SPARTA (not publically available at this time)</li>
 						<li><a target="_blank" href="https://github.com/vancegroup/KVR">KVR</a></li>
@@ -343,7 +403,7 @@
 					and found a paper by Justin Boyan and Michael Littman entitled,
 					<a target="_blank" href="https://www.cs.cmu.edu/~jab/cv/pubs/boyan.q-routing.pdf">"Packet Routing in Dynamically Changing Networks:
 					A Reinforcement Learning Approach"</a>, explaining how machine learning could be used to optimize
-					packet routing in a computer network. After spending time programming and research the subsequent summer, I was
+					packet routing in a computer network. After programming and doing research the subsequent summer, I was
 					able to replicate their results. I attended the <a target="_blank" href="http://www.aaai.org/">AAAI</a>
 					conference the second summer, this time in Vancouver.</p>
 					<p>The file below is a presentation I gave at Simpson regarding the work.</p>
