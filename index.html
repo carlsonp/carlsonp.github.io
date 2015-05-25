@@ -8,9 +8,15 @@
 
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+		<!--http://fancyapps.com/fancybox/, https://github.com/fancyapps/fancyBox-->
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox-thumbs.css?v=1.0.7" media="screen" />
 
 		<style>
 		html {
@@ -19,11 +25,6 @@
 		}
 		body {
 		  margin-bottom: 60px;
-		}
-		.footer {
-		  position: absolute;
-		  bottom: 0;
-		  height: 60px;
 		}
 		.title {
 			text-align: center;
@@ -44,17 +45,35 @@
 	</head>
 
 	<body>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//initialize fancybox on page load
+				$(".fancybox").fancybox({
+					openEffect	: 'none',
+					closeEffect	: 'none',
+					helpers : { //use two extra .js "helpers" for fancybox
+						media : {},
+						thumbs  : {
+							width   : 10,
+							height  : 10
+						}
+					}
+				});
+			});
+		</script>
+		
 		<div class="container">
 			<div class="well">
 				<div class="row">
 					<div class="col-md-2">
-					<!-- using carlsonp @ ISU address for MD5 hash -->
-					<!-- <img class="img-rounded" alt="Gravatar Image" title="Gravatar Image" src="http://www.gravatar.com/avatar/01423fabe018684981d49d33cc1e8a4f?s=80" /> -->
+					<!-- using carlson2442 @ gmail address for MD5 hash -->
+					<!-- <img class="img-rounded" alt="Gravatar Image" title="Gravatar Image" src="http://www.gravatar.com/avatar/f411241feba272182428a7572b08acee?s=80" /> -->
 					<img class="img-rounded" alt="Headshot" title="Headshot" src="images/headshot.jpg" />
 					</div>
 					<div class="col-md-10">
 					<h4>Hi, my name is Patrick Carlson and I'm a PhD student in <a target="_blank" href="http://hci.iastate.edu">Human-Computer Interaction</a> (HCI) at 
-					<a target="_blank" href="http://www.iastate.edu">Iowa State University</a>. I've successfully defended and am on the job hunt this summer. My major adviser is
+					<a target="_blank" href="http://www.iastate.edu">Iowa State University</a>. I've successfully defended and am on the job hunt this summer 2015. My major adviser is
 					<a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/">Dr. Judy M. Vance</a>. My undergraduate education was at
 					<a target="_blank" href="http://www.simpson.edu">Simpson College</a> where I received a Bachelor of Arts, cum laude, with a double major in Computer Science and Psychology.</h4>
 					</div>
@@ -77,8 +96,8 @@
 					<div class="row">
 						<div class="col-md-6">
 						<p>
-							<a href="resume.pdf"><button type="button" class="btn btn-primary">View Resume (pdf)</button></a>
-							<a href="CV.pdf"><button type="button" class="btn btn-primary">View CV (pdf)</button></a>
+							<a href="resume.pdf" class="btn btn-primary">View Resume (pdf)</a>
+							<a href="CV.pdf" class="btn btn-primary">View CV (pdf)</a>
 						</p>
 						<p>Contact</p>
 						<ul>
@@ -163,46 +182,91 @@
 				</div>
 				<div class="tab-pane fade" id="research">
 					<h4 class="title">Research</h4>
-					<h4>Improving Socialization of New Developers in Open Source Software: Harnessing Social and Technical Datamining</h4>
-					<img src="images/SocialTechnicalCongruence.png" class="img-responsive" alt="Open Source Tool">
+					<h4>Improving Open Source Software Development: Harnessing Social and Technical Datamining</h4>
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/SocialTechnicalCongruence.png" title="Social Technical Congruence">
+								<img src="images/SocialTechnicalCongruence.png" alt="Social Technical Congruence" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/Jamii_front_page.png" title="Jamii Front Page">
+								<img src="images/Jamii_front_page.png" alt="Jamii Front Page" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://vimeo.com/123356265?autoplay=1" title="Jamii Website Video">
+								Jamii Website Video
+								<img src="images/vimeo_logo_dark.png" alt="Jamii Website Video" />
+							</a>
+						</div>
+					</div>
+					
 					<br>
-					<p>My PhD thesis topic involves looking at datamining <a target="_blank" href="https://www.mozilla.org/">Mozilla</a>
+					<p>My PhD dissertation topic involved datamining <a target="_blank" href="https://www.mozilla.org/">Mozilla</a>
 					and <a target="_blank" href="http://www.kde.org/">KDE</a>, two large Open Source communities.  Through analysis
-					of Git version control history, email mailing lists, and source code files, this parsed information is stored
-					in the graph database <a target="_blank" href="http://www.neo4j.org/">Neo4j</a>.  Interpretation of this information
-					to quantify areas such as developer expertise, Social Technical Congruence (STC), and the impact of source
-					code changes can help both beginner and veteran developers keep up with the community.  The field of Social
+					of Git version control history, email mailing lists, and source code files, this parsed information was stored
+					in the graph database <a target="_blank" href="http://www.neo4j.org/">Neo4j</a>.  Using Social Technical Congruence
+					(STC) as a core starting point, three algorithms were developed to help developers better understand
+					the social and technical structure of software development. The field of Social
 					Technical Congruence (Cataldo et al. 2006) attempts to understand and model the synergies between technical
 					development and communication.  It is able to identify gaps in the communication structure based on shared
-					technical dependencies of developers to help minimize future bugs and keep up with changes.</p>
-					<p>A survey of both Mozilla and KDE examining the perceptions of socialization between beginner and veteran
-					members was developed.  This paper is currently under review.</p>
-					<p>An online tool to help visualize this information for developers is currently being developed and will
-					be released soon.</p>
-					<p>Publications:</p>
+					technical dependencies of developers to help minimize future bugs and keep up with changes.  Three novel
+					algorithms were developed to help developers:</p>
 					<ul>
-						<li><b>*Under Review*</b> Patrick Carlson and Judy M. Vance, <i>Understanding Open Source Socialization
-						in the Mozilla and KDE Communities</i>, ACM GROUP</li>
-						<li>Patrick Carlson and Nan Xiao, <i>Experience and Recommendations for Distributed Software
-						Development</i>, <a target="_blank" href="http://dx.doi.org/10.1109/CTGDSD.2012.6226945">In Proceedings of the
-						International Conference on Software Engineering (ICSE)
-						Workshop on Collaborative Teaching of Globally Distributed Software Development</a>, pages 1–4,
-						Zurich, Switzerland, ACM.</li>
+						<li>Impactful Commits: This algorithm shows you code commits that have had a substantial impact to the technical dependency structure of the source code.</li>
+						<li>Developer Knowledge: This algorithm allows you to select a source code file to determine who has knowledge or expertise in the file. This is helpful if you have a question about a particular file or section but are unsure who to contact for help.</li>
+						<li>Communication Suggestions: This algorithm provides suggestions about who you (or other developers) should be increasing communication with on the mailing list based on work on shared source code.</li>
 					</ul>
+					<p>The three algorithms were implemented in a program and website called <a target="_blank" href="http://www.github.com/carlsonp/jamii/">Jamii</a>.  The program provides all backend processing
+					of data from source code version control and email mailing lists as well as visualization.  The Jamii website was then tested against the same two communities.
+					Two surveys examining Mozilla and KDE were performed that gathered qualitative and quantitative data.  The first survey gathered demographic and perceptual differences in socialization
+					between beginner and veteran members.  The second survey investigated the perceived usefulness of the website as well as the poential for
+					improving the socialization process.</p>
 					<hr>
 					<h4>Using Bimanual Haptics in Virtual Assembly Tasks</h4>
-					<img src="images/GOALI_1.jpg" class="img-responsive" alt="Bimanual Haptics">
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/GOALI_1.jpg" title="Bimanual Haptics">
+								<img src="images/GOALI_1.jpg" alt="Bimanual Haptics" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/bimanual_1.jpg" title="Bimanual Haptics">
+								<img src="images/bimanual_1.jpg" alt="Bimanual Haptics" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://www.youtube.com/watch?v=ONUS4MD4DpY?autoplay=1" title="Bimanual Haptics Video">
+								Bimanual Haptics Video
+								<img src="images/YouTube-icon.png" alt="Bimanual Haptics Video" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://www.youtube.com/watch?v=cw4rOKokGWE?autoplay=1" title="Bimanual Snap Assembly Video">
+								Bimanual Snap Assembly Video
+								<img src="images/YouTube-icon.png" alt="Bimanual Snap Assembly Video" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://www.youtube.com/watch?v=To2mGQlX9ZQ?autoplay=1" title="Bimanual Asymmetric Assembly Video">
+								Bimanual Asymmetric Assembly Video
+								<img src="images/YouTube-icon.png" alt="Bimanual Asymmetric Assembly Video" />
+							</a>
+						</div>
+					</div>
+					
 					<br>
-					<p>I am currently working with <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/">Dr. Judy Vance</a> and
+					<p>I've worked with <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/">Dr. Judy Vance</a> and
 					other graduate students on research using various configurations of bimanual haptic devices to examine their
 					effectiveness in virtual assembly tasks. One of the haptic devices we use is the <a target="_blank" href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic Touch (formerly
 					Sensable Phantom Omni)</a>. This research aims to improve the training of assembly tasks through the utilization
-					of haptic devices, virtual reality, and accurate physics calculations. We're also examining how much learning
+					of haptic devices, virtual reality, and accurate physics calculations. We've also examined how much learning
 					transfer takes place in using this technology for virtual training.
 					You can find more details, images,
-					and videos <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/RESEARCH/GOALIHybrid/">here</a>. In this short
-					<a target="_blank" href="https://www.youtube.com/watch?v=ONUS4MD4DpY">Youtube video</a>, you can see the setup being
-					used.</p>
+					and videos <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/RESEARCH/GOALIHybrid/">here</a>.</p>
 					<p>Publications:</p>
 					<ul>
 						<li><b>*In Press*</b> Patrick Carlson, Anicia Peters, Stephen B. Gilbert, Judy M. Vance, and Andy Luse, <i>Virtual
@@ -217,13 +281,43 @@
 					</ul>
 					<hr>
 					<h4>Virtual Shopping Study</h4>
-					<img src="images/C6_user.png" class="img-responsive" alt="Virtual Shopping Study">
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/C6_user.png" title="Virtual Shopping REU">
+								<img src="images/C6_user.png" alt="Virtual Shopping REU" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/shopping_1.jpg" title="New Virtual Shopping">
+								<img src="images/shopping_1.jpg" alt="New Virtual Shopping" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/shopping_2.jpg" title="New Virtual Shopping">
+								<img src="images/shopping_2.jpg" alt="New Virtual Shopping" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://www.youtube.com/watch?v=0oymW3HMI-8?autoplay=1" title="REU Shopping Video">
+								REU Shopping Video
+								<img src="images/YouTube-icon.png" alt="REU Shopping Video" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://www.youtube.com/watch?v=4IUWEbcBnAk?autoplay=1" title="REU Summer Experience">
+								REU Summer Experience
+								<img src="images/YouTube-icon.png" alt="REU Summer Experience" />
+							</a>
+						</div>
+					</div>
+					
 					<br>
 					<p>Over the summer of 2010, I coordinated and co-advised three undergraduate Research Experience for Undergraduates (REU) students in a project to
-					create a physical mockup of a shopping cart that was then used in a virtual reality user study.  You can find
-					more details, images, and videos <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/RESEARCH/VRShopping/">here</a>. In this
-					short <a target="_blank" href="https://www.youtube.com/watch?v=0oymW3HMI-8">Youtube video</a> created by the REU students, you
-					can see the hardware and software in use in the <a target="_blank" href="http://www.vrac.iastate.edu/c6.php">C6</a>.</p>
+					create a physical mockup of a shopping cart.  This hardware was then used in a virtual reality user study utilizing the
+					<a target="_blank" href="http://www.vrac.iastate.edu/facilities/c6/">C6 at ISU</a>.  We have since updated the hardware
+					to use an Arduino and a linear encoder for user control.  You can find
+					more details, images, and videos <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/RESEARCH/VRShopping/">here</a>.</p>
 					<p>Publications:</p>
 					<ul>
 						<li>Patrick Carlson, Carl Kirpes, Ryan A. Pavlik, Judy M. Vance, Livien Yin, Terrence Scott-Cooper,
@@ -235,7 +329,15 @@
 					</ul>
 					<hr>
 					<h4>Undergraduate Psychology Capstone - Examining The Linux Desktop</h4>
-					<img src="images/compiz-fusion_cube.jpg" class="img-responsive" alt="Compiz Fusion Cube">
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/compiz-fusion_cube.jpg" title="Compiz Fusion Cube">
+								<img src="images/compiz-fusion_cube.jpg" alt="Compiz Fusion Cube" />
+							</a>
+						</div>
+					</div>
+					
 					<br>
 					<p>My undergraduate Psychology capstone involved two semesters of work. The first semester was spent
 					creating an experiment, gathering the required materials, and making sure the design was solid. The second
@@ -260,12 +362,6 @@
 								<li><b>*In Press*</b> Patrick Carlson, Anicia Peters, Stephen B. Gilbert, Judy M. Vance, and Andy Luse, <i>Virtual
 								Training: Learning Transfer of Assembly Tasks</i>, IEEE Transactions on Visualization
 								and Computer Graphics</li>
-							</ul>
-						</li>
-						<li>2014
-							<ul>
-								<li><b>*Under Review*</b> Patrick Carlson and Judy M. Vance, <i>Understanding Open Source Socialization
-								in the Mozilla and KDE Communities</i>, ACM GROUP</li>
 							</ul>
 						</li>
 						<li>2012
@@ -340,20 +436,90 @@
 					</ul>
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<p class="centered">If you can't find something or would like a PDF, please <a href="mailto:carlsonp@iastate.edu">email me</a>.</p>
+							<p class="centered">If you can't find something or would like a PDF, please contact me.</p>
 						</div>
 					</div>
 
 				</div>
 				<div class="tab-pane fade" id="projects">
 					<h4 class="title">Projects</h4>
+					<h4>OpenCV: Object Tracking</h4>
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="http://vimeo.com/118879528?autoplay=1" title="OpenCV Worm Tracking Video">
+								OpenCV Worm Tracking Video
+								<img src="images/vimeo_logo_dark.png" alt="OpenCV Worm Tracking Video" />
+							</a>
+						</div>
+					</div>
+					
+					<p>This was an individual homework assignment for the HCI 575: Computational Perception class.
+					<a target="_blank" href="http://opencv.org">OpenCV (Open Source Computer Vision Library) </a> is an
+					extremely popular library for image analysis and manipulation.  The homework assignment was to
+					write code to track very small worms in various video clips.  This was a real problem that was provided
+					to the professor by graduate students in Biology at Iowa State.  The source code can be found
+					<a target="_blank" href="https://github.com/carlsonp/OpenCV-tracking-objects">here on Github</a>.
+					The video above shows the original
+					video on the left and the tracked worms and red "breadcrumb" trails on the right.</p>
+					<hr>
+					<h4>Nvidia CUDA: Partial Implementation of JSEG Image Segmentation</h4>
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/tux.jpg" title="Tux Original">
+								<img src="images/tux.jpg" alt="Tux Original" />
+							</a>
+						</div>
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/tux_segmented.png" title="Tux Segmented">
+								<img src="images/tux_segmented.png" alt="Tux Segmented" />
+							</a>
+						</div>
+					</div>
+					
+					<p>This was an individual project for the ComS 610: seminar class (Nvidia CUDA Programming).
+					<a target="_blank" href="https://developer.nvidia.com/cuda-zone">CUDA</a> is Nvidia's library
+					for doing high speed parallel calculations on graphics processing units (GPUs).
+					Image segmentation is the process of simplifying an image to object boundaries.
+					The source code can be found <a target="_blank" href="https://github.com/carlsonp/JSEG-CUDA-segmentation">here on Github</a>.
+					An example of an original image and segmented image can be seen above.</p>					
+					<hr>
 					<h4>Distributed Software Development: Android Application</h4>
-					<img src="images/android-icon.png" class="img-responsive" alt="Android">
-					<p>This was a group project for ComS 510X (Distributed Software Development).  This project spanned three different
-					countries and universities.</p>
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/android-icon.png" title="Android">
+								<img src="images/android-icon.png" alt="Android" />
+							</a>
+						</div>
+					</div>
+					
+					<p>This was a semester long group project for ComS 510X (Distributed Software Development).  The project spanned three different
+					countries and universities.  Students from Iowa State University in the US, Jilin University in China, and the Federal
+					Universidade da Bahia in Brazil participated.  The project was to create an Android based facial recognition
+					program for storing names and contact information.  At Iowa State, we worked on the front-end Android application
+					which interfaced with the backend facial recognition systems in China and Brazil.  This project demonstrated
+					the benefits and challenges of geographically distributed software development.</p>
+					<p>Publications:</p>
+					<ul>
+						<li>Patrick Carlson and Nan Xiao, <i>Experience and Recommendations for Distributed Software
+						Development</i>, <a target="_blank" href="http://dx.doi.org/10.1109/CTGDSD.2012.6226945">In Proceedings of the
+						International Conference on Software Engineering (ICSE)
+						Workshop on Collaborative Teaching of Globally Distributed Software Development</a>, pages 1–4,
+						Zurich, Switzerland, ACM.</li>
+					</ul>
 					<hr>
 					<h4>Web Development Design and Evaluation</h4>
-					<img src="images/Byen.png" class="img-responsive" alt="Byen">
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/Byen.png" title="Byen">
+								<img src="images/Byen.png" alt="Byen" />
+							</a>
+						</div>
+					</div>
+					
 					<p>As a group project for HCI 573X (User Interface Implementation for Web Applications), we developed a website called "Byen"
 					that parses Git repositories and helps developers understand historical changes to files through charts and graphs.  Byen means
 					city/community in Norwegian.  From the technical side, the class focused on teaching web languages and technologies such as HTML,
@@ -363,7 +529,15 @@
 					providing ideas for my subsequent thesis topic.</p>
 					<hr>
 					<h4>ThinkSpace Redesign</h4>
-					<img src="images/ThinkSpace.png" class="img-responsive" alt="ThinkSpace">
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/ThinkSpace.png" title="ThinkSpace">
+								<img src="images/ThinkSpace.png" alt="ThinkSpace" />
+							</a>
+						</div>
+					</div>
+					
 					<br>
 					<p><a target="_blank" href="http://www.education.iastate.edu/c_i/pdapm/thinkspace.html">ThinkSpace</a> is an online
 					collaboration and instructional system for students and teachers developed at Iowa State University.  As part of a group project for HCI 596 (Emerging
@@ -376,20 +550,33 @@
 					<hr>
 					<h4>Virtual Reality Software</h4>
 					<p>While working with <a target="_blank" href="http://public.vrac.iastate.edu/~jmvance/">Dr. Judy Vance</a> and other
-					graduate students, I have contributed to the following <a target="_blank" href="https://github.com/vancegroup">Vance Group</a> software projects:</p>
+					graduate students, I have contributed to the following <a target="_blank" href="https://github.com/vancegroup">Vance Group</a> VR software projects:</p>
 					<ul>
-						<li>Open Source datamining tool (not yet released)</li>
 						<li><a target="_blank" href="https://github.com/vancegroup/vr-jugglua">vr-jugglua</a></li>
-						<li>SPARTA (not publically available at this time)</li>
+						<li>SPARTA (not publicly available)</li>
 						<li><a target="_blank" href="https://github.com/vancegroup/KVR">KVR</a></li>
+						<li>Virtual Shopping (not publicly available)</li>
 						<li><a target="_blank" href="https://github.com/vancegroup/lua-bullet">lua-bullet</a></li>
+						<li><a target="_blank" href="https://github.com/carlsonp/osgBullet">osgBullet</a></li>
+						<li><a target="_blank" href="https://github.com/carlsonp/osgWorks">osgWorks</a></li>
 						<li><a target="_blank" href="https://github.com/vancegroup/glove-tools">glove-tools</a></li>
 						<li><a target="_blank" href="https://github.com/vancegroup/sparta-scripts-and-models">sparta-scripts-and-models</a></li>
 						<li><a target="_blank" href="https://github.com/vancegroup/IDETCDemo2013">IDETCDemo2013</a></li>
+						<li><a target="_blank" href="https://github.com/vancegroup/modular-stock-jconf">modular-stock-jconf</a></li>
+						<li><a target="_blank" href="https://github.com/vancegroup/metal-jconf">metal-jconf</a></li>
+						<li><a target="_blank" href="https://github.com/vancegroup/haptics-lab-jconf">haptics-lab-jconf</a></li>
 					</ul>
 					<hr>
 					<h4>Low-Cost Virtual Reality for Immersive Computing Environments</h4>
-					<img src="images/low_cost_VR.jpg" class="img-responsive" alt="Low-Cost VR">
+					
+					<div class="row">
+						<div class="col-sm-3 col-md-2">
+							<a class="fancybox thumbnail" rel="gallery1" href="images/low_cost_VR.jpg" title="Low-Cost VR">
+								<img src="images/low_cost_VR.jpg" alt="Low-Cost VR" />
+							</a>
+						</div>
+					</div>
+					
 					<br>
 					<p>As VR and gaming hardware advances, various off-the-shelf hardware can be used as inexpensive tracking and interaction
 					devices.  The <a target="_blank" href="http://www.razerzone.com/gaming-controllers/razer-hydra">Razer Hydra</a> uses magnetic
@@ -423,7 +610,6 @@
 						and the importance to the airline of finding better solutions." The article can be
 						seen <a target="_blank" href="http://travel2.nytimes.com/2006/11/14/business/14boarding.html">here</a>.</p>
 					</blockquote>
-					<p>Here is the description of the problem and our solution:</p>
 					<p><a href="mcm.pdf">"Too Much Personal Baggage" And Other Variables Affecting Airplane Boarding Times (.pdf)</a> - MCM 2007</p>
 					<hr>
 					<h4>Research Experience for Undergraduates (REU)</h4>
@@ -432,7 +618,7 @@
 					of Dr. Terran Lane. The first summer I learned the basics of machine learning and made some simple programs to make sure
 					I understood reinforcement learning (Q-Learning). One involved creating a program that had an agent traversing a grid world in order to get
 					to a destination. My first summer I attended the <a target="_blank" href="http://www.aaai.org/">Association for the
-					Advancement of Artificial Intelligence</a>
+					Advancement of Artificial Intelligence</a> (AAAI)
 					conference in Boston.</p>
 					<p>After attending the conference, I chose a research problem to focus on. I was interested in networking technology
 					and found a paper by Justin Boyan and Michael Littman entitled,
@@ -441,7 +627,7 @@
 					packet routing in a computer network. After programming and doing research the subsequent summer, I was
 					able to replicate their results. I attended the <a target="_blank" href="http://www.aaai.org/">AAAI</a>
 					conference the second summer, this time in Vancouver.</p>
-					<p>The file below is a presentation I gave at Simpson regarding the work.</p>
+					<p>The file below is a presentation I gave at Simpson college regarding the work.</p>
 					<p>REU Presentation: <a href="reu_presentation.pdf">Can the Internet learn? (.pdf)</a> - 2007</p>
 				</div>
 				<div class="tab-pane fade" id="coursework">
@@ -493,19 +679,9 @@
 						</ul>
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<p class="centered">If you would like a copy of my unofficial transcript, please <a href="mailto:carlsonp@iastate.edu">email me</a>.</p>
+							<p class="centered">If you would like a copy of my unofficial transcript, please contact me.</p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<br>
-			<div class="footer">
-				<div class="well">
-					<p class="text-muted">Hosted by <a href="http://www.github.com">Github</a>, built using <a href="http://getbootstrap.com">Bootstrap</a> and
-					<a href="http://jquery.com/">jQuery</a>. &copy; 2015</p>
 				</div>
 			</div>
 		</div>
