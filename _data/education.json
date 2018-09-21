@@ -1,0 +1,22 @@
+[
+    {
+        "school": "Iowa State University",
+        "city": "Ames",
+        "state": "Iowa",
+        "start_year": "2008",
+        "end_year": "2015",
+        "type": "PhD",
+        "gpa": "3.68/4.0",
+        "major": "Human-Computer Interaction (HCI)"
+    },
+    {
+        "school": "Simpson College",
+        "city": "Indianola",
+        "state": "Iowa",
+        "start_year": "2003",
+        "end_year": "2008",
+        "type": "Bachelor of Arts, cum laude",
+        "gpa": "3.715/4.0",
+        "major": "Computer Science and Psychology"
+    }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "authors": [
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      },
+      {
+        "family": "Vance",
+        "given": "Judy M."
+      }
+    ],
+    "id": "Carlson2013-ETC",
+    "year": 2013,
+    "month": "April",
+    "note": "Poster presented at the Emerging Technologies Conference, Ames, IA",
+    "title": "Who Should I Contact?: Helping New Developers Find Experts",
+    "award": "Awarded most interesting research project"
+  },
+  {
+    "authors": [
+      {
+        "family": "Vance",
+        "given": "Judy M.",
+      },
+      {
+        "family": "Gilbert",
+        "given": "Stephen"
+      },
+      {
+        "family": "Oren",
+        "given": "Michael"
+      },
+      {
+        "family": "Pavlik",
+        "given": "Ryan"
+      },
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      }
+    ],
+    "id": "Vance2012-NSF",
+    "year": 2012,
+    "month": "July",
+    "note": "Poster presented at the NSF Engineering Research and Innovation Conference, Atlanta, Georgia",
+    "title": "GOALI: A Hybrid Method to Support Natural Interaction of Parts in a Virtual Environment"
+  },
+  {
+    "authors": [
+      {
+        "family": "Peters",
+        "given": "Anicia"
+      },
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      },
+      {
+        "family": "Gilbert",
+        "given": "Stephen"
+      },
+      {
+        "family": "Vance",
+        "given": "Judy M."
+      }
+    ],
+    "id": "Peters2012-ETC",
+    "year": 2012,
+    "month": "April",
+    "note": "Poster presented at the Emerging Technologies Conference, Ames, IA",
+    "title": "A Hybrid Method to Support Natural Interaction of Parts in a Virtual Environment",
+    "award": "Awarded most interesting research project"
+  },
+  {
+    "authors": [
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      },
+      {
+        "family": "Vance",
+        "given": "Judy M."
+      },
+      {
+        "family": "Nguyen",
+        "given": "Tien"
+      },
+      {
+        "family": "Blankenship",
+        "given": "Kevin"
+      }
+    ],
+    "id": "Carlson2011-ETC",
+    "year": 2011,
+    "month": "April",
+    "note": "Poster presented at the Emerging Technologies Conference, Ames, IA",
+    "title": "Social Technical Congruence: The Link Between Social Science and Technology"
+  },
+  {
+    "authors": [
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      },
+      {
+        "family": "Vance",
+        "given": "Judy M."
+      }
+    ],
+    "id": "Carlson2010-ASME",
+    "year": 2010,
+    "month": "May",
+    "note": "Poster presented at the ASME World Conference on Innovative Virtual Reality, Ames, IA",
+    "title": "An Evaluation of Asymmetric Interfaces for Bimanual Virtual Assembly With Haptics"
+  },
+  {
+    "authors": [
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      }
+    ],
+    "id": "Carlson2008-MPA",
+    "year": 2008,
+    "month": "May",
+    "note": "Poster presented at the Midwestern Psychological Association, Chicago, IL",
+    "title": "Usability and Appeal of a 2D versus 3D Linux Operating System"
+  }
+]

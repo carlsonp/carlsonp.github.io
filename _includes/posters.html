@@ -1,0 +1,20 @@
+{% assign posters = site.data.posters | sort:"year" | reverse %}
+{%- for poster in posters -%}
+
+    {%- for name in poster.authors -%}
+        {{ name.family }}, {{ name.given }}
+        {%- if forloop.last == false -%}
+            &nbsp;&&nbsp;
+        {%- endif -%}
+    {%- endfor -%}
+
+    &nbsp;({{ poster.year }}, {{ poster.month }}).
+    &nbsp;{{ poster.title }}.
+    &nbsp;{{ poster.note }}.
+
+    {%- if poster.award -%}
+        &nbsp;<b>{{ poster.award }}</b>.
+    {%- endif -%}
+
+<br><br>
+{%- endfor -%}
