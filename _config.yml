@@ -13,14 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# Some are specific to the jekyll-seo plugin
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Patrick Carlson
+description: Personal site for Patrick Carlson.  Resume, contact information, projects, and more.
+author: Patrick Carlson
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://carlsonp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
 markdown: kramdown
-#theme: minima
+#theme: minima #<- replaced with a customized version of minima
 plugins:
   - jekyll-seo-tag
 

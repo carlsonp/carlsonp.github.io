@@ -9,7 +9,13 @@
     {%- endfor -%}
 
     &nbsp;({{ poster.year }}, {{ poster.month }}).
-    &nbsp;{{ poster.title }}.
+
+    {%- if poster.url -%}
+        [&nbsp;{{ poster.title }}]({{ poster.url | relative_url }}).
+    {%- else -%}
+        &nbsp;{{ poster.title }}.
+    {%- endif -%}
+
     &nbsp;{{ poster.note }}.
 
     {%- if poster.award -%}

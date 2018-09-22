@@ -30,6 +30,7 @@
         "given": "Troy"
       }
     ],
+    "url": "http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1623673",
     "container-title": "Proceedings of the ASME 2011 world conference on innovative virtual reality (WINVR2011)",
     "id": "Carlson2011",
     "year": 2011,
@@ -59,6 +60,7 @@
         "given": "Judy M."
       }
     ],
+    "url": "http://dx.doi.org/10.1109/VR.2012.6180873",
     "container-title": "Proceedings of the IEEE 2012 virtual reality conference",
     "id": "Oren2012",
     "year": 2012,
@@ -80,6 +82,7 @@
         "given": "Nan"
       }
     ],
+    "url": "http://dx.doi.org/10.1109/CTGDSD.2012.6226945",
     "container-title": "Proceedings of the international conference on software engineering (ICSE) workshop on collaborative teaching of globally distributed software development",
     "id": "Carlson-NanXiao2012",
     "year": 2012,
@@ -144,6 +147,7 @@
         "given": "Andy"
       }
     ],
+    "url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7014246",
     "container-title": "IEEE Transactions on Visualization and Computer Graphics",
     "id": "Carlson-et-al-2015",
     "issue": "6",
@@ -168,6 +172,7 @@
         "given": "Meisha"
       }
     ],
+    "url": "https://link.springer.com/article/10.1007/s10055-016-0290-z",
     "container-title": "Virtual Reality",
     "id": "Carlson-et-al-2016",
     "year": 2016,

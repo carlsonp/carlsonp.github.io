@@ -1,0 +1,24 @@
+{% assign papers = site.data.papers | sort:"year" | reverse %}
+{%- for paper in papers -%}
+
+    {%- for name in paper.authors -%}
+        {{ name.family }}, {{ name.given }}
+        {%- if forloop.last == false -%}
+            &nbsp;&&nbsp;
+        {%- endif -%}
+    {%- endfor -%}
+
+    &nbsp;({{ paper.year }}).
+    &nbsp;{{ paper.title }}.
+
+    {%- if paper.url -%}
+        [&nbsp;In&nbsp;{{ paper.container-title }}]({{ paper.url }}),
+    {%- else -%}
+        &nbsp;In&nbsp;{{ paper.container-title }},
+    {%- endif -%}
+
+    &nbsp;pages&nbsp;{{ paper.page }},
+    &nbsp;{{ paper.publisher-place }}.
+
+<br>
+{%- endfor -%}

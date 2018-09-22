@@ -6,6 +6,12 @@ order: 3
 ---
 
 
+#### Papers
+
+{% include papers.html %}
+
+
+
 #### Posters
 
 {% include posters.html %}
