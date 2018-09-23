@@ -1,7 +1,34 @@
 <ul class="social-media-list">
-  {%- if site.data.social.github_username_work -%}<li><a href="https://github.com/{{ site.data.social.github_username_work| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.data.social.github_username_work| escape }}</span></a></li>{%- endif -%}
-  {%- if site.data.social.github_username_fun -%}<li><a href="https://github.com/{{ site.data.social.github_username_fun| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.data.social.github_username_fun| escape }}</span></a></li>{%- endif -%}
-  {%- if site.data.social.linkedin -%}<li><a href="https://www.linkedin.com/in/{{ site.data.social.linkedin| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a></li>{%- endif -%}
-  {%- if site.data.social.twitter_username -%}<li><a href="https://www.twitter.com/{{ site.data.social.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">{{ site.data.social.twitter_username| escape }}</span></a></li>{%- endif -%}
-  {%- if site.data.social.stackoverflow -%}<li><a href="https://www.data.social.stackoverflow.com/user/{{ site.data.social.stackoverflow| cgi_escape | escape }}"><img src={{ '/assets/so-icon.svg' | relative_url }} class="svg-icon"> <span class="username">data.social.stackoverflow</span></a></li>{%- endif -%}
+  <li>
+    <a href="https://www.linkedin.com/in/{{ site.data.social.linkedin| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a>
+  </li>
+
+  <li>
+    <a href="http://orcid.org/{{ site.data.social.orcid| cgi_escape | escape }}"><img src="{{ '/assets/orcid-icon.svg' | relative_url }}" class="svg-icon"> <span class="username">Orcid</span></a>
+  </li>
+
+  <li>
+    <a href="https://iastate.academia.edu/{{ site.data.social.academia| cgi_escape | escape }}"><img src="{{ '/assets/academia-icon.svg' | relative_url }}" class="svg-icon"> <span class="username">Academia</span></a>
+  </li>
+
+  <li>
+    <a href="http://www.researchgate.net/profile/{{ site.data.social.researchgate| cgi_escape | escape }}"><img src="{{ '/assets/researchgate-icon.svg' | relative_url }}" class="svg-icon"> <span class="username">ResearchGate</span></a>
+  </li>
+
+  <li>
+    <a href="https://github.com/{{ site.data.social.github_username_work| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">Github: {{ site.data.social.github_username_work| escape }} (Academic Work)</span></a>
+  </li>
+
+  <li>
+    <a href="https://github.com/{{ site.data.social.github_username_fun| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">Github: {{ site.data.social.github_username_fun| escape }} (Personal Projects)</span></a>
+  </li>
+
+  <li>
+    <a href="https://stackoverflow.com/users/{{ site.data.social.stackoverflow| escape }}"><img src="{{ '/assets/so-icon.svg' | relative_url }}" class="svg-icon"> <span class="username">Stackoverflow</span></a>
+  </li>
+
+
+  {%- if site.data.social.twitter_username -%}
+    <li><a href="https://www.twitter.com/{{ site.data.social.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> <span class="username">{{ site.data.social.twitter_username| escape }}</span></a></li>
+  {%- endif -%}
 </ul>

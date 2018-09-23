@@ -3,6 +3,7 @@ layout: page
 title: Coursework
 permalink: /coursework/
 order: 5
+header: true
 ---
 
 

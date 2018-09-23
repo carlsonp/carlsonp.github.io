@@ -1,0 +1,158 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "url": "https://www.python.org/"
+    },
+    {
+      "name": "Lua",
+      "url": "http://www.lua.org/"
+    },
+    {
+      "name": "Java",
+      "url": "http://www.java.com/"
+    },
+    {
+      "name": "R",
+      "url": "http://www.r-project.org/"
+    },
+    {
+      "name": "C++",
+      "url": "http://www.cplusplus.com/"
+    },
+    {
+      "name": "C#",
+      "url": "http://msdn.microsoft.com/en-us/library/67ef8sbd.aspx"
+    },
+    {
+      "name": "HTML",
+      "url": "http://www.w3.org/html/"
+    },
+    {
+      "name": "Javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "SQL",
+      "url": "https://en.wikipedia.org/wiki/SQL"
+    },
+    {
+      "name": "PHP",
+      "url": "https://www.php.net/"
+    },
+    {
+      "name": "LaTeX",
+      "url": "http://www.latex-project.org/"
+    },
+    {
+      "name": "Cypher (Neo4j)",
+      "url": "http://www.neo4j.org/"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "url": "http://git-scm.com/"
+    },
+    {
+      "name": "Subversion",
+      "url": "https://subversion.apache.org/"
+    },
+    {
+      "name": "Windows",
+      "url": "http://windows.microsoft.com/"
+    },
+    {
+      "name": "Linux",
+      "url": "http://www.linux.com/"
+    },
+    {
+      "name": "CMake",
+      "url": "http://www.cmake.org/"
+    },
+    {
+      "name": "Eclipse",
+      "url": "https://www.eclipse.org/"
+    },
+    {
+      "name": "Jupyter",
+      "url": "https://jupyter.org/"
+    }
+  ],
+  "programs": [
+    {
+      "name": "Inkscape",
+      "url": "http://www.inkscape.org/"
+    },
+    {
+      "name": "Lyx",
+      "url": "http://www.lyx.org/"
+    },
+    {
+      "name": "Gimp",
+      "url": "http://www.gimp.org/"
+    },
+    {
+      "name": "JustInMind",
+      "url": "http://www.justinmind.com/"
+    },
+    {
+      "name": "Balsamiq",
+      "url": "http://balsamiq.com/"
+    },
+    {
+      "name": "UserZoom",
+      "url": "http://www.userzoom.com/"
+    },
+    {
+      "name": "Mendeley",
+      "url": "http://www.mendeley.com/"
+    },
+    {
+      "name": "Pencil",
+      "url": "http://pencil.evolus.vn/"
+    },
+    {
+      "name": "Tableau",
+      "url": "https://www.tableau.com/"
+    },
+    {
+      "name": "RStudio",
+      "url": "https://www.rstudio.com/products/RStudio/"
+    }
+  ],
+  "libraries": [
+    {
+      "name": "Pandas",
+      "url": "http://pandas.pydata.org/"
+    },
+    {
+      "name": "SciPy",
+      "url": "https://www.scipy.org/"
+    },
+    {
+      "name": "scikit-learn",
+      "url": "http://scikit-learn.org/"
+    },
+    {
+      "name": "jQuery",
+      "url": "https://jquery.com/"
+    },
+    {
+      "name": "D3.js",
+      "url": "https://d3js.org/"
+    },
+    {
+      "name": "Django",
+      "url": "https://www.djangoproject.com/"
+    },
+    {
+      "name": "Bootstrap",
+      "url": "https://getbootstrap.com/"
+    },
+    {
+      "name": "NodeJS",
+      "url": "https://nodejs.org/"
+    }
+  ]
+}

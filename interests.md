@@ -3,6 +3,7 @@ layout: page
 title: Interests
 permalink: /interests/
 order: 1
+header: true
 ---
 
 
@@ -24,7 +25,7 @@ Many of my interests revolve around combining Computer Science and Psychology.
 
 Hobbies
 
-* Contributing to Open Source projects
-* Web development
+* Contributing to Open Source Projects
+* Web Development
 * Badminton
-* Playing piano
+* Playing Piano

@@ -4,6 +4,23 @@
       {
         "family": "Carlson",
         "given": "Patrick"
+      }
+    ],
+    "url": "http://lib.dr.iastate.edu/etd/14663",
+    "container-title": "Graduate Theses and Dissertations",
+    "id": "Carlson2015",
+    "year": 2015,
+    "keyword": "open source, social technical congruence, software development, tools",
+    "page": "1-192",
+    "publisher-place": "Ames, IA",
+    "title": "Engaging developers in open source software projects: harnessing social and technical data mining to improve software development",
+    "type": "phd-dissertation"
+  },
+  {
+    "authors": [
+      {
+        "family": "Carlson",
+        "given": "Patrick"
       },
       {
         "family": "Kirpes",
@@ -91,7 +108,7 @@
     "publisher": "ACM",
     "publisher-place": "Zurich, Switzerland",
     "title": "Experience and Recommendations for Distributed Software Development",
-    "type": "paper-conference"
+    "type": "paper-workshop"
   },
   {
     "authors": [
