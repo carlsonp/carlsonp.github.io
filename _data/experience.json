@@ -1,0 +1,77 @@
+[
+  {
+    "place": "Sandia National Labs",
+    "city": "Albuquerque",
+    "state": "New Mexico",
+    "experience": [
+      {
+        "title": "Data Scientist",
+        "timeperiod": "2017 - present",
+        "description": "Data analysis, software development, data virtualization, Tableau visualization, and UX reviews."
+      }
+    ]
+  },
+  {
+    "place": "Renaissance Learning",
+    "city": "Wisconsin Rapids",
+    "state": "Wisconsin",
+    "experience": [
+      {
+        "title": "User Experience Analyst",
+        "timeperiod": "2016 - 2017",
+        "description": "Perform remote usability testing on software prototypes, help with UI design, and develop and analyze survey data."
+      }
+    ]
+  },
+  {
+    "place": "Iowa State University",
+    "city": "Ames",
+    "state": "Iowa",
+    "experience": [
+      {
+        "title": "Improving Open Source Software Development (Dissertation Topic)",
+        "timeperiod": "2010 - 2015",
+        "description": "Apply data mining in the development of algorithms and tools to improve developer understanding of technical
+                        and social structure in large Open Source communities. Under direction of Dr. Judy Vance."
+      },
+      {
+        "title": "Bimanual Haptics for Virtual Assembly Tasks (Research Assistant)",
+        "timeperiod": "2009 - 2015",
+        "description": "Designed and analyzed studies examining various bimanual haptic device configurations and learning transfer for
+                      virtual assembly tasks. Under direction of Dr. Judy Vance."
+      },
+      {
+        "title": "Mentor/Support Research Experience for Undergraduate (REU) Students",
+        "timeperiod": "Summer 2010",
+        "description": "Helped coordinate three undergraduate REU students whose project entailed creating a physical mockup of a
+                      shopping cart which was then used in a virtual reality user study. Under direction of Dr. Judy Vance."
+      }
+    ]
+  },
+  {
+    "place": "University of New Mexico",
+    "city": "Albuquerque",
+    "state": "New Mexico",
+    "experience": [
+      {
+        "title": "Research Experience for Undergraduates (REU)",
+        "timeperiod": "Spring 2006 - Fall 2007",
+        "description": "Learned the basics of machine learning and worked on applying this to improving the routing of packets in a
+                      dynamic network. Under direction of Dr. Terran Lane."
+      }
+    ]
+  },
+  {
+    "place": "Simpson College",
+    "city": "Indianola",
+    "state": "Iowa",
+    "experience": [
+      {
+        "title": "Usability and Appeal of the Linux Desktop (Psychology Capstone)",
+        "timeperiod": "Spring 2007 - Fall 2008",
+        "description": "Constructed and performed an experiment empirically contrasting usability and appeal of a 2D versus 3D Linux
+                      desktop."
+      }
+    ]
+  }
+]

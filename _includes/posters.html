@@ -1,6 +1,11 @@
 {% assign posters = site.data.posters | sort:"year" | reverse %}
 {%- for poster in posters -%}
 
+  {% comment %}
+    The include.resume flag and the below logic limits the posters displayed.
+  {% endcomment %}
+  {% if include.resume == null or include.resume == "true" and poster.id == "Carlson2013-ETC" or poster.id == "Peters2012-ETC") %}
+
     {%- for name in poster.authors -%}
         {{ name.family }}, {{ name.given }}
         {%- if forloop.last == false -%}
@@ -22,5 +27,7 @@
         &nbsp;<b>{{ poster.award }}</b>.
     {%- endif -%}
 
-<br><br>
+    <br><br>
+  {% endif %}
+
 {%- endfor -%}

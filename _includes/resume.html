@@ -6,3 +6,63 @@
 {{ site.data.contact.phone }} {{ site.data.contact.email }}
 
 {{ site.data.contact.website }}
+
+<h2>
+  Education
+</h2>
+
+{% for school in site.data.education %}
+  {{ school.school }} - {{ school.city }}, {{ school.state }}<br>
+  {{ school.type }}, Cumulative GPA: {{ school.gpa }} - {{ school.start_year }} - {{ school.end_year }}<br>
+  {{ school.major_string }} {{ school.major }}
+{% endfor %}
+
+<h2>
+  Experience
+</h2>
+
+{% for experience in site.data.experience %}
+  {{ experience.place }} - {{ experience.city }}, {{ experience.state }}<br>
+  {%- for e in experience.experience -%}
+    {{ e.title }} - {{ e.timeperiod }}<br>
+    {{ e.description }}<br>
+  {%- endfor -%}
+  <br>
+{% endfor %}
+
+<h3>
+  Teaching and Other
+</h3>
+
+{% for t in site.data.teaching %}
+  {{ t.title }} ({{ t.type }}) - {{ t.date }}<br>
+  {{ t.description }}<br>
+{% endfor %}
+
+<h2>
+  Groups and Activities
+</h2>
+
+{% for group in site.data.groups %}
+  {{ group.title }} - {{ group.date }}<br>
+{% endfor %}
+
+<h2>
+  Honors
+</h2>
+
+{% for honor in site.data.honors %}
+  {{ honor.title }} - {{ honor.date }}<br>
+{% endfor %}
+
+<h2>
+  Recent Poser Presentations
+</h2>
+
+{% include posters.html resume="true" %}
+
+<h2>
+  Recent Publications
+</h2>
+
+{% include papers.html resume="true" %}

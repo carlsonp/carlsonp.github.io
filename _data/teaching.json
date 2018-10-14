@@ -1,32 +1,32 @@
 [
-    {
-        "title": "Engineering/LAS Online Learning",
-        "date": "Fall 2014",
-		"description": "Recorded class videos, advised undergraduate producers, and scripted automated startups for recordings",
-		"type": "Graduate Assistant"
-    },
-    {
-        "title": "ME/WLC 484/584: Technology, Globalization, and Culture",
-        "date": "Fall 2013",
-		"description": "Graded homework, facilitated online class discussions",
-		"type": "Teaching Assistant"
-    },
-    {
-        "title": "HCI/Psych 522: Scientific Methods in HCI",
-        "date": "Spring 2013",
-		"description": "Graded homework and managed content for online website",
-		"type": "Teaching Assistant"
-    },
-    {
-        "title": "CS 309: Software Development Practices",
-        "date": "Spring 2009",
-		"description": "Graded homework, helped students with documenting project development",
-		"type": "Teaching Assistant"
-    },
-    {
-        "title": "CS 207: Programming I",
-        "date": "Fall 2008",
-		"description": "Assisted and tutored students with homework and basic programming concepts",
-		"type": "Teaching Assistant"
-    }
+  {
+    "title": "Engineering/LAS Online Learning",
+    "date": "Fall 2014",
+    "description": "Recorded class videos, advised undergraduate producers, and scripted automated startups for recordings",
+    "type": "Graduate Assistant"
+  },
+  {
+    "title": "ME/WLC 484/584: Technology, Globalization, and Culture",
+    "date": "Fall 2013",
+    "description": "Graded homework, facilitated online class discussions",
+    "type": "Teaching Assistant"
+  },
+  {
+    "title": "HCI/Psych 522: Scientific Methods in HCI",
+    "date": "Spring 2013",
+    "description": "Graded homework and managed content for online website",
+    "type": "Teaching Assistant"
+  },
+  {
+    "title": "CS 309: Software Development Practices",
+    "date": "Spring 2009",
+    "description": "Graded homework, helped students with documenting project development",
+    "type": "Teaching Assistant"
+  },
+  {
+    "title": "CS 207: Programming I",
+    "date": "Fall 2008",
+    "description": "Assisted and tutored students with homework and basic programming concepts",
+    "type": "Teaching Assistant"
+  }
 ]

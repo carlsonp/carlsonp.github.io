@@ -12,13 +12,17 @@
     &nbsp;{{ paper.title }}.
 
     {%- if paper.url -%}
-        [&nbsp;In&nbsp;{{ paper.container-title }}]({{ paper.url }}),
+        &nbsp;In [{{ paper.container-title }}]({{ paper.url }}),
     {%- else -%}
-        &nbsp;In&nbsp;{{ paper.container-title }},
+        &nbsp;In {{ paper.container-title }},
     {%- endif -%}
 
-    &nbsp;pages&nbsp;{{ paper.page }},
-    &nbsp;{{ paper.publisher-place }}.
+    {%- if paper.publisher-place -%}
+      &nbsp;pages {{ paper.page }},
+      {{ paper.publisher-place }}.
+    {%- else -%}
+      &nbsp;pages {{ paper.page }}.
+    {%- endif -%}
 
-<br>
+<br><br>
 {%- endfor -%}
