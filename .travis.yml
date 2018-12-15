@@ -1,0 +1,34 @@
+# https://jekyllrb.com/docs/continuous-integration/travis-ci/
+
+# .travis.yml validator: http://lint.travis-ci.org/
+
+language: ruby
+
+sudo: false
+
+rvm:
+  - 2.4.1
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+cache: bundler # caching bundler gem packages will speed up build
+
+# https://docs.travis-ci.com/user/notifications/#Configuring-email-notifications
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+# ampersand means run in the background
+# sleep and wait for the app to load
+# start running casperjs tests
+script:
+    - bundle exec jekyll build --future
+    - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
