@@ -3,6 +3,8 @@ carlsonp.github.io
 
 [https://carlsonp.github.io](https://carlsonp.github.io)
 
+[![Build Status](https://travis-ci.com/carlsonp/carlsonp.github.io.svg?branch=master)](https://travis-ci.com/carlsonp/carlsonp.github.io)
+
 ### About
 
 The personal website for Patrick Carlson.

@@ -27,4 +27,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", ">= 0.1.0" if Gem.win_platform?
 
 # for travis-ci and checking the overall site
+# https://github.com/gjtorikian/html-proofer
 gem "html-proofer"

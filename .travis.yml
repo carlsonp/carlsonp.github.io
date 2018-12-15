@@ -26,9 +26,7 @@ addons:
     packages:
     - libcurl4-openssl-dev
 
-# ampersand means run in the background
-# sleep and wait for the app to load
-# start running casperjs tests
+# https://github.com/gjtorikian/html-proofer
 script:
     - bundle exec jekyll build --future
     - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
