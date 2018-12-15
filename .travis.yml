@@ -29,4 +29,4 @@ addons:
 # https://github.com/gjtorikian/html-proofer
 script:
     - bundle exec jekyll build --future
-    - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+    #- bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
