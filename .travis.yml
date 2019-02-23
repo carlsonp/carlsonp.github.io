@@ -14,6 +14,7 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 before_install:
+  - rm Gemfile.lock
   - export GEM_HOME=$PWD/vendor/bundle/ruby/2.1.0
   - gem install bundler
 
