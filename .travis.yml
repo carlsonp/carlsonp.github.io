@@ -13,6 +13,10 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
+before_install:
+  - export GEM_HOME=$PWD/vendor/bundle/ruby/2.1.0
+  - gem install bundler
+
 cache: bundler # caching bundler gem packages will speed up build
 
 # https://docs.travis-ci.com/user/notifications/#Configuring-email-notifications
