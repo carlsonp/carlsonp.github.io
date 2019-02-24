@@ -81,6 +81,10 @@
     {
       "name": "Docker",
       "url": "https://www.docker.com/"
+    },
+    {
+      "name": "Travis-CI",
+      "url": "https://travis-ci.org/"
     }
   ],
   "programs": [
@@ -165,6 +169,10 @@
     {
       "name": "Shiny",
       "url": "https://shiny.rstudio.com/"
+    },
+    {
+      "name": "Jekyll",
+      "url": "https://jekyllrb.com/"
     }
   ]
 }
