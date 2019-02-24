@@ -3,12 +3,13 @@
     "place": "Sandia National Labs",
     "city": "Albuquerque",
     "state": "New Mexico",
+    "resume": "true",
     "experience": [
       {
         "title": "Data Scientist",
         "timeperiod": "2017 - present",
         "description": "Data analysis, R and Python programming, data virtualization, Tableau and Shiny visualizations, analytics team co-lead,
-                      SQL and Mongo querying, architecture and data engineering research, project planning and writeups, and UX design and reviews."
+                      SQL and Mongo querying, architecture and data engineering research, project planning, writeups, design mockups, and UX reviews."
       }
     ]
   },
@@ -16,6 +17,7 @@
     "place": "Renaissance Learning",
     "city": "Wisconsin Rapids",
     "state": "Wisconsin",
+    "resume": "true",
     "experience": [
       {
         "title": "User Experience Analyst",
@@ -28,6 +30,7 @@
     "place": "Iowa State University",
     "city": "Ames",
     "state": "Iowa",
+    "resume": "true",
     "experience": [
       {
         "title": "Improving Open Source Software Development (Dissertation Topic)",
@@ -53,6 +56,7 @@
     "place": "University of New Mexico",
     "city": "Albuquerque",
     "state": "New Mexico",
+    "resume": "true",
     "experience": [
       {
         "title": "Research Experience for Undergraduates (REU)",
@@ -66,12 +70,39 @@
     "place": "Simpson College",
     "city": "Indianola",
     "state": "Iowa",
+    "resume": "true",
     "experience": [
       {
         "title": "Usability and Appeal of the Linux Desktop (Psychology Capstone)",
         "timeperiod": "Spring 2007 - Fall 2008",
         "description": "Constructed and performed an experiment empirically contrasting usability and appeal of a 2D versus 3D Linux
                       desktop."
+      },
+      {
+        "title": "Origins of Human Cooperation and Altruism",
+        "timeperiod": "Fall 2005 - Fall 2006",
+        "description": "Simulated the evolution of cooperation/altruism using game theory techniques and genetic algorithms.
+                      Presented work at Argonne National Laboratory."
+      },
+      {
+        "title": "Student Technician",
+        "timeperiod": "Nov 2005 - May 2006",
+        "description": "Helped students and faculty connect to the Internet and troubleshoot network issues.",
+        "resume": "false"
+      }
+    ]
+  },
+  {
+    "place": "Mounds Park Academy",
+    "city": "St. Paul",
+    "state": "Minnesota",
+    "resume": "false",
+    "experience": [
+      {
+        "title": "Computer Technician",
+        "timeperiod": "Summers 2002 - 2005, and 2008",
+        "description": "Conducted laptop repair and software setup for 60 freshman students. Imaged and configured multiple
+                      computer labs."
       }
     ]
   }

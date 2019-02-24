@@ -9,12 +9,13 @@
     "url": "http://lib.dr.iastate.edu/etd/14663",
     "container-title": "Graduate Theses and Dissertations",
     "id": "Carlson2015",
+    "resume": "true",
     "year": 2015,
     "keyword": "open source, social technical congruence, software development, tools",
     "page": "1-192",
     "publisher-place": "Ames, IA",
     "title": "Engaging developers in open source software projects: harnessing social and technical data mining to improve software development",
-    "type": "phd-dissertation"
+    "type": "PhD Dissertation"
   },
   {
     "authors": [
@@ -50,13 +51,14 @@
     "url": "http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1623673",
     "container-title": "Proceedings of the ASME 2011 world conference on innovative virtual reality (WINVR2011)",
     "id": "Carlson2011",
+    "resume": "false",
     "year": 2011,
     "keyword": "human-computer interaction,immersive environments,reu,shopping,vance,virtual reality",
     "page": "1-5",
     "publisher": "ASME",
     "publisher-place": "Milan, Italy",
     "title": "Comparison of Single-Wall Versus Multi-Wall Immersive Environments to Support a Virtual Shopping Experience",
-    "type": "paper-conference"
+    "type": "Conference Paper"
   },
   {
     "authors": [
@@ -80,13 +82,14 @@
     "url": "http://dx.doi.org/10.1109/VR.2012.6180873",
     "container-title": "Proceedings of the IEEE 2012 virtual reality conference",
     "id": "Oren2012",
+    "resume": "false",
     "year": 2012,
     "keyword": "assembly, virtual reality, training, haptics, cognition",
     "page": "1-4",
     "publisher": "IEEE",
     "publisher-place": "Orange County, California",
     "title": "Puzzle Assembly Training: Real World vs. Virtual Environment",
-    "type": "paper-conference"
+    "type": "Conference Paper"
   },
   {
     "authors": [
@@ -102,13 +105,14 @@
     "url": "http://dx.doi.org/10.1109/CTGDSD.2012.6226945",
     "container-title": "Proceedings of the international conference on software engineering (ICSE) workshop on collaborative teaching of globally distributed software development",
     "id": "Carlson-NanXiao2012",
+    "resume": "false",
     "year": 2012,
     "keyword": "distributed software development, Android, remote collaboration",
     "page": "1-4",
     "publisher": "ACM",
     "publisher-place": "Zurich, Switzerland",
     "title": "Experience and Recommendations for Distributed Software Development",
-    "type": "paper-workshop"
+    "type": "Workshop Paper"
   },
   {
     "authors": [
@@ -135,11 +139,12 @@
     ],
     "container-title": "NSF engineering research and innovation conference proceedings",
     "id": "Vance-et-al-2011",
+    "resume": "false",
     "year": 2011,
     "page": "1-4",
     "publisher-place": "Atlanta, Georgia",
     "title": "GOALI: A Hybrid Method to Support Natural Interaction of Parts in a Virtual Environment",
-    "type": "paper-conference"
+    "type": "Workshop Paper"
   },
   {
     "authors": [
@@ -167,11 +172,12 @@
     "url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7014246",
     "container-title": "IEEE Transactions on Visualization and Computer Graphics",
     "id": "Carlson-et-al-2015",
+    "resume": "false",
     "issue": "6",
     "year": 2015,
     "page": "770-782",
     "title": "Virtual Training: Learning Transfer of Assembly Tasks",
-    "type": "article-journal",
+    "type": "Peer-Reviewed Journal Article",
     "volume": "21"
   },
   {
@@ -192,9 +198,10 @@
     "url": "https://link.springer.com/article/10.1007/s10055-016-0290-z",
     "container-title": "Virtual Reality",
     "id": "Carlson-et-al-2016",
+    "resume": "true",
     "year": 2016,
     "page": "1-9",
     "title": "An evaluation of asymmetric interfaces for bimanual virtual assembly with haptics",
-    "type": "article-journal"
+    "type": "Peer-Reviewed Journal Article"
   }
 ]

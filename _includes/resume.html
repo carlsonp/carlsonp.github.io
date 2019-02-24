@@ -33,12 +33,15 @@
 
 <div>
 {% for experience in site.data.experience %}
-  <div class="resume-place">{{ experience.place }}</div><div class="resume-location">{{ experience.city }}, {{ experience.state }}</div><br>
-  {%- for e in experience.experience -%}
-    {{ e.title }}<div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
-    <div class="resume-indent">{{ e.description }}</div>
-  {%- endfor -%}
-  
+  {% if experience.resume == "true" %}
+    <div class="resume-place">{{ experience.place }}</div><div class="resume-location">{{ experience.city }}, {{ experience.state }}</div><br>
+    {% for e in experience.experience %}
+      {% if e.resume == null or e.resume != "false" %}
+        {{ e.title }}<div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
+        <div class="resume-indent">{{ e.description }}</div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}
 </div>
 
@@ -59,7 +62,7 @@
 
 <div>
 {% for group in site.data.groups %}
-  {% if group.id == "isubadminton" or group.id == "hcivp" or group.id == "simpmath" or group.id == "simpcs" %}
+  {% if group.resume == "true" %}
     {{ group.title }}<div class="resume-timeperiod">{{ group.date }}</div><br>
   {% endif %}
 {% endfor %}

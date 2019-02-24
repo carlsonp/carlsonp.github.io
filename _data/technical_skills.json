@@ -77,6 +77,10 @@
     {
       "name": "Jupyter",
       "url": "https://jupyter.org/"
+    },
+    {
+      "name": "Docker",
+      "url": "https://www.docker.com/"
     }
   ],
   "programs": [
@@ -119,6 +123,10 @@
     {
       "name": "RStudio",
       "url": "https://www.rstudio.com/products/RStudio/"
+    },
+    {
+      "name": "Axure",
+      "url": "https://www.axure.com/"
     }
   ],
   "libraries": [

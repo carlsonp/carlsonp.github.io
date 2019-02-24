@@ -4,7 +4,7 @@
   {% comment %}
     The include.resume flag and the below logic limits the posters displayed.
   {% endcomment %}
-  {% if include.resume == null or (include.resume == "true" and (paper.id == "Carlson-et-al-2016" or paper.id == "Carlson2015")) %}
+  {% if include.resume == null or (include.resume == "true" and paper.resume == "true") %}
     {%- for name in paper.authors -%}
         {{ name.family }}, {{ name.given }}
         {%- if forloop.last == false -%}
@@ -27,6 +27,8 @@
     {%- else -%}
     &nbsp;pages {{ paper.page }}.
     {%- endif -%}
+
+    {% if include.cv == "true" %} <b>({{ paper.type }})</b>{% endif %}
   <br>
   {% endif %}
 {%- endfor -%}

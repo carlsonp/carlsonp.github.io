@@ -1,0 +1,49 @@
+[
+    {
+        "title": "RStudio Conference",
+        "date": "Jan 15-18, 2019",
+        "city": "Austin",
+        "state": "Texas",
+        "country": "USA",
+        "url": "https://www.rstudio.com/conference/"
+    },
+    {
+        "title": "Tableau Conference",
+        "date": "Oct 9-12, 2017",
+        "city": "Las Vegas",
+        "state": "Nevada",
+        "country": "USA",
+        "url": "https://tc17.tableau.com/"
+    },
+    {
+        "title": "International Conference on Software Engineering (ICSE)",
+        "date": "June 2-9, 2012",
+        "city": "Zurich",
+        "country": "Switzerland",
+        "url": "https://www.ifi.uzh.ch/icse2012"
+    },
+    {
+        "title": "IEEE Virtual Reality Conference",
+        "date": "March 4-8, 2012",
+        "city": "Costa Mesa",
+        "state": "California",
+        "country": "USA",
+        "url": "https://dblp.org/db/conf/vr/vr2012"
+    },
+    {
+        "title": "The Association for the Advancement of Artificial Intelligence",
+        "date": "July 22-26, 2007",
+        "city": "Vancouver",
+        "state": "British Columbia",
+        "country": "Canada",
+        "url": "https://www.aaai.org/Conferences/AAAI/aaai07.php"
+    },
+    {
+        "title": "The Association for the Advancement of Artificial Intelligence",
+        "date": "July 16-20, 2006",
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "USA",
+        "url": "https://www.aaai.org/Conferences/AAAI/aaai06.php"
+    }
+]

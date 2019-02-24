@@ -1,0 +1,177 @@
+
+<div class="resume-name">
+    Curriculum Vitae<br>
+</div>
+  
+{{ site.data.contact.name }}
+<br>
+{{ site.data.contact.address_street }}
+<br>
+{{ site.data.contact.address_city }} {{ site.data.contact.address_state }}, {{ site.data.contact.address_zip }} - {{ site.data.contact.country }}
+<br>
+{{ site.data.contact.phone }}
+<br>
+<a target="_blank" rel="noopener" href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+<br>
+<a target="_blank" rel="noopener" href="{{ site.data.contact.website }}">{{ site.data.contact.website }}</a>
+
+  
+<div class="heading-title">
+Education
+</div>
+<hr>
+  
+<div>
+{% for school in site.data.education %}
+    <div class="resume-place">{{ school.school }}</div><div class="resume-location">{{ school.city }}, {{ school.state }}</div><br>
+    {{ school.type }}, Cumulative GPA: {{ school.gpa }}<div class="resume-timeperiod">{{ school.start_year }} - {{ school.end_year }}</div><br>
+    {{ school.major_string }} {{ school.major }}<br>
+{% endfor %}
+</div>
+  
+<div class="heading-title">
+Experience
+</div>
+<hr>
+
+<div>
+{% for experience in site.data.experience %}
+    <div class="resume-place">{{ experience.place }}</div><div class="resume-location">{{ experience.city }}, {{ experience.state }}</div><br>
+    {%- for e in experience.experience -%}
+        {{ e.title }}<div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
+        <div class="resume-indent">{{ e.description }}</div>
+    {%- endfor -%}
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Teaching and Other
+</div>
+
+<div>
+{% for t in site.data.teaching %}
+    {{ t.title }} ({{ t.type }})<div class="resume-timeperiod">{{ t.date }}</div><br>
+    <div class="resume-indent">{{ t.description }}</div>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Groups and Activities
+</div>
+<hr>
+
+<div>
+{% for group in site.data.groups %}
+    {{ group.title }}<div class="resume-timeperiod">{{ group.date }}</div><br>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Honors
+</div>
+<hr>
+
+<div>
+{% for honor in site.data.honors %}
+    {{ honor.title }}<div class="resume-timeperiod">{{ honor.date }}</div><br>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Poster Presentations
+</div>
+<hr>
+
+{% include posters.html %}
+
+<div class="heading-title">
+Publications
+</div>
+<hr>
+
+{% include papers.html cv="true" %}
+
+<div class="heading-title">
+Invited Presentations
+</div>
+<hr>
+
+<div>
+{% for talk in site.data.invited_presentations %}
+    {{ talk.title }} - {{ talk.date }}<br><br>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Outreach
+</div>
+<hr>
+
+<div>
+{% for o in site.data.outreach %}
+    {{ o.title }}<div class="resume-timeperiod">{{ o.date }}</div><br>
+    <div class="resume-indent">{{ o.description }}</div>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Professional Organizations
+</div>
+<hr>
+
+<div>
+{% for pro in site.data.professional_organizations %}
+    {{ pro.title }}<br>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Conference Attendance
+</div>
+<hr>
+
+<div>
+{% for conf in site.data.conferences %}
+    {{ conf.title }}<div class="resume-timeperiod">{{ conf.date }}</div><br>
+    <div class="resume-indent">{{ conf.city}}{% if conf.state %}, {{ conf.state}}{% endif %} - {{ conf.country }}</div>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Training
+</div>
+<hr>
+
+<div>
+{% for t in site.data.training %}
+    {{ t.title }}<div class="resume-timeperiod">{{ t.date }}</div><br>
+    <div class="resume-indent">{{ t.description }}</div>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+Technical Skills
+</div>
+<hr>
+
+<div>
+Programming Languages:
+{% for item in site.data.technical_skills.languages %}
+    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+{% endfor %}
+<br><br>
+Tools:
+{% for item in site.data.technical_skills.tools %}
+    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+{% endfor %}
+<br><br>
+Programs:
+{% for item in site.data.technical_skills.programs %}
+    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+{% endfor %}
+<br><br>
+Libraries:
+{% for item in site.data.technical_skills.libraries %}
+    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+{% endfor %}
+</div>
