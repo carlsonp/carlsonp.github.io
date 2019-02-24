@@ -1,68 +1,93 @@
 
-{{ site.data.contact.name }}
+<div class="resume-name">
+  {{ site.data.contact.name }}
+</div>
 
-{{ site.data.contact.address_street }} - {{ site.data.contact.address_city }} {{ site.data.contact.address_state }}, {{ site.data.contact.address_zip }} - {{ site.data.contact.country }}
-
-{{ site.data.contact.phone }} {{ site.data.contact.email }}
-
-{{ site.data.contact.website }}
-
-<h2>
-  Education
-</h2>
-
-{% for school in site.data.education %}
-  {{ school.school }} - {{ school.city }}, {{ school.state }}<br>
-  {{ school.type }}, Cumulative GPA: {{ school.gpa }} - {{ school.start_year }} - {{ school.end_year }}<br>
-  {{ school.major_string }} {{ school.major }}
-{% endfor %}
-
-<h2>
-  Experience
-</h2>
-
-{% for experience in site.data.experience %}
-  {{ experience.place }} - {{ experience.city }}, {{ experience.state }}<br>
-  {%- for e in experience.experience -%}
-    {{ e.title }} - {{ e.timeperiod }}<br>
-    {{ e.description }}<br>
-  {%- endfor -%}
+<div class="center-text">
+  {{ site.data.contact.address_street }} - {{ site.data.contact.address_city }} {{ site.data.contact.address_state }}, {{ site.data.contact.address_zip }} - {{ site.data.contact.country }}
   <br>
-{% endfor %}
+  {{ site.data.contact.phone }} - <a target="_blank" rel="noopener" href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+  <br>
+  <a target="_blank" rel="noopener" href="{{ site.data.contact.website }}">{{ site.data.contact.website }}</a> - 
+  <a target="_blank" rel="noopener" href="https://github.com/{{ site.data.social.github_username_work| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.data.social.github_username_work| escape }}</span></a> - 
+  <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.social.linkedin| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg> <span class="username">LinkedIn</span></a>
+</div>
 
-<h3>
+<div class="heading-title">
+  Education
+</div>
+<hr>
+
+<div>
+{% for school in site.data.education %}
+  <div class="resume-place">{{ school.school }}</div><div class="resume-location">{{ school.city }}, {{ school.state }}</div><br>
+  {{ school.type }}, Cumulative GPA: {{ school.gpa }}<div class="resume-timeperiod">{{ school.start_year }} - {{ school.end_year }}</div><br>
+  {{ school.major_string }} {{ school.major }}<br>
+{% endfor %}
+</div>
+
+<div class="heading-title">
+  Experience
+</div>
+<hr>
+
+<div>
+{% for experience in site.data.experience %}
+  <div class="resume-place">{{ experience.place }}</div><div class="resume-location">{{ experience.city }}, {{ experience.state }}</div><br>
+  {%- for e in experience.experience -%}
+    {{ e.title }}<div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
+    <div class="resume-indent">{{ e.description }}</div>
+  {%- endfor -%}
+  
+{% endfor %}
+</div>
+
+<div class="heading-title">
   Teaching and Other
-</h3>
+</div>
 
+<div>
 {% for t in site.data.teaching %}
-  {{ t.title }} ({{ t.type }}) - {{ t.date }}<br>
-  {{ t.description }}<br>
+  {{ t.title }} ({{ t.type }})<div class="resume-timeperiod">{{ t.date }}</div><br>
 {% endfor %}
+</div>
 
-<h2>
+<div class="heading-title">
   Groups and Activities
-</h2>
+</div>
+<hr>
 
+<div>
 {% for group in site.data.groups %}
-  {{ group.title }} - {{ group.date }}<br>
+  {% if group.id == "isubadminton" or group.id == "hcivp" or group.id == "simpmath" or group.id == "simpcs" %}
+    {{ group.title }}<div class="resume-timeperiod">{{ group.date }}</div><br>
+  {% endif %}
 {% endfor %}
+</div>
 
-<h2>
+<div class="heading-title">
   Honors
-</h2>
+</div>
+<hr>
 
+<div>
 {% for honor in site.data.honors %}
-  {{ honor.title }} - {{ honor.date }}<br>
+  {% if honor.id == "isures" or honor.id == "cssenior" or honor.id == "mcm" or honor.id == "psichi" %}
+    {{ honor.title }}<div class="resume-timeperiod">{{ honor.date }}</div><br>
+  {% endif %}
 {% endfor %}
+</div>
 
-<h2>
-  Recent Poser Presentations
-</h2>
+<div class="heading-title">
+  Recent Poster Presentations
+</div>
+<hr>
 
 {% include posters.html resume="true" %}
 
-<h2>
+<div class="heading-title">
   Recent Publications
-</h2>
+</div>
+<hr>
 
 {% include papers.html resume="true" %}

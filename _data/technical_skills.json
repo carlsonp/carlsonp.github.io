@@ -153,6 +153,10 @@
     {
       "name": "NodeJS",
       "url": "https://nodejs.org/"
+    },
+    {
+      "name": "Shiny",
+      "url": "https://shiny.rstudio.com/"
     }
   ]
 }

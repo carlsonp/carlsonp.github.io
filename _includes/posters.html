@@ -4,7 +4,7 @@
   {% comment %}
     The include.resume flag and the below logic limits the posters displayed.
   {% endcomment %}
-  {% if include.resume == null or include.resume == "true" and poster.id == "Carlson2013-ETC" or poster.id == "Peters2012-ETC") %}
+  {% if include.resume == null or (include.resume == "true" and (poster.id == "Carlson2013-ETC" or poster.id == "Peters2012-ETC")) %}
 
     {%- for name in poster.authors -%}
         {{ name.family }}, {{ name.given }}
@@ -26,8 +26,6 @@
     {%- if poster.award -%}
         &nbsp;<b>{{ poster.award }}</b>.
     {%- endif -%}
-
-    <br><br>
+  <br>
   {% endif %}
-
 {%- endfor -%}

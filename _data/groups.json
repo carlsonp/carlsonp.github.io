@@ -1,25 +1,31 @@
 [
     {
+        "id": "isubadminton",
         "title": "Iowa State University Badminton Club",
         "date": "2009 - 2015"
     },
     {
+        "id": "webmaster",
         "title": "ISU Badminton Club Webmaster",
         "date": "2009 - 2012"
     },
     {
+        "id": "design",
         "title": "Computational Design Synthesis: Summer Camp (Munich, Germany)",
         "date": "August 1-5, 2011"
     },
     {
+        "id": "hcivp",
         "title": "ISU Human-Computer Interaction Student Group Vice President",
         "date": "2010 - 2011"
     },
     {
+        "id": "simpmath",
         "title": "Simpson College Math Club",
         "date": "2006 - 2008"
     },
     {
+        "id": "simpcs",
         "title": "Simpson College Computer Club",
         "date": "2003 - 2008"
     }

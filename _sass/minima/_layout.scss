@@ -232,6 +232,41 @@
   font-size: 125%;
 }
 
+/**
+ * Resume and CV formatting
+ */
+
+ .resume-name {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+ .center-text {
+  text-align: center;
+ }
+
+ .heading-title {
+  font-size: 26px;
+ }
+
+ .resume-place {
+  font-weight: bold;
+  float: left;
+ }
+
+ .resume-location {
+  font-weight: bold;
+  float: right;
+ }
+
+ .resume-timeperiod {
+  float: right;
+ }
+
+ .resume-indent {
+  margin-left: 1em;
+ }
 
 /**
  * Posts

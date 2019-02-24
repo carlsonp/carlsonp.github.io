@@ -1,6 +1,10 @@
 {% assign papers = site.data.papers | sort:"year" | reverse %}
 {%- for paper in papers -%}
 
+  {% comment %}
+    The include.resume flag and the below logic limits the posters displayed.
+  {% endcomment %}
+  {% if include.resume == null or (include.resume == "true" and (paper.id == "Carlson-et-al-2016" or paper.id == "Carlson2015")) %}
     {%- for name in paper.authors -%}
         {{ name.family }}, {{ name.given }}
         {%- if forloop.last == false -%}
@@ -18,11 +22,11 @@
     {%- endif -%}
 
     {%- if paper.publisher-place -%}
-      &nbsp;pages {{ paper.page }},
-      {{ paper.publisher-place }}.
+    &nbsp;pages {{ paper.page }},
+    {{ paper.publisher-place }}.
     {%- else -%}
-      &nbsp;pages {{ paper.page }}.
+    &nbsp;pages {{ paper.page }}.
     {%- endif -%}
-
-<br><br>
+  <br>
+  {% endif %}
 {%- endfor -%}

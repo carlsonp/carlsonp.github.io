@@ -1,29 +1,36 @@
 [
     {
+        "id": "isures",
         "title": "Iowa State University Research Excellence Award",
         "date": "Spring 2015"
     },
     {
+        "id": "cssenior",
         "title": "Outstanding Senior in Computer Science (Simpson College)",
         "date": "May 2008"
     },
     {
+        "id": "mcm",
         "title": "Honorable Mention in the Mathematical Contest in Modeling (MCM)",
         "date": "2006, 2007, 2008"
     },
     {
+        "id": "psichi",
         "title": "Psi Chi National Honor Society in Psychology",
         "date": "March 2007"
     },
     {
+        "id": "simpdean",
         "title": "Simpson College Dean’s List",
         "date": "Spring 2005, Fall 2006, Fall 2007"
     },
     {
+        "id": "simphonor",
         "title": "Simpson College Academic Honor Scholarship",
         "date": " Fall 2003 - Spring 2008"
     },
     {
+        "id": "mpacert",
         "title": "Certificate of Achievement from MPA Technology Department",
         "date": "December 2000"
     }
