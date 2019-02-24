@@ -22,10 +22,11 @@ Many of my interests revolve around combining Computer Science and Psychology.
 * Usability
 * Machine Learning
 * Artificial Intelligence
+* Data Engineering and Architecture Design
 
 Hobbies
 
 * Contributing to Open Source Projects
 * Web Development
 * Badminton
-* Playing Piano
+* [Playing Piano](https://www.youtube.com/playlist?list=PL478ezBNt1NDfFi-zYkNmwlAd_8jrD27X)
