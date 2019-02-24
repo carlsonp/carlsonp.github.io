@@ -3,11 +3,11 @@
     Curriculum Vitae<br>
 </div>
   
-{{ site.data.contact.name }}
+<b>{{ site.data.contact.name }}</b>
 <br>
 {{ site.data.contact.address_street }}
 <br>
-{{ site.data.contact.address_city }} {{ site.data.contact.address_state }}, {{ site.data.contact.address_zip }} - {{ site.data.contact.country }}
+{{ site.data.contact.address_city }}, {{ site.data.contact.address_state }} {{ site.data.contact.address_zip }} - {{ site.data.contact.country }}
 <br>
 {{ site.data.contact.phone }}
 <br>
@@ -132,7 +132,8 @@ Conference Attendance
 
 <div>
 {% for conf in site.data.conferences %}
-    {{ conf.title }}<div class="resume-timeperiod">{{ conf.date }}</div><br>
+    <a target="_blank" rel="noopener" href="{{ conf.url }}">{{ conf.title }}</a>
+    <div class="resume-timeperiod">{{ conf.date }}</div><br>
     <div class="resume-indent">{{ conf.city}}{% if conf.state %}, {{ conf.state}}{% endif %} - {{ conf.country }}</div>
 {% endfor %}
 </div>
