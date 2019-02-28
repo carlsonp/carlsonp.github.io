@@ -145,7 +145,12 @@ Training
 
 <div>
 {% for t in site.data.training %}
-    {{ t.title }}<div class="resume-timeperiod">{{ t.date }}</div><br>
+    {% if t.url %}
+        <a target="_blank" rel="noopener" href="{{ t.url }}">{{ t.title }}</a>
+    {% else %}
+        {{ t.title }}
+    {% endif %}
+    <div class="resume-timeperiod">{{ t.date }}</div><br>
     <div class="resume-indent">{{ t.description }}</div>
 {% endfor %}
 </div>

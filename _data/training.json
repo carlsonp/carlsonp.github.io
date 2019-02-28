@@ -2,21 +2,23 @@
     {
         "title": "Intermediate Shiny (RStudio Conference 2019)",
         "date": "Jan 15-16, 2019",
-        "description": "?"
+        "description": "This covered the basics of Shiny, reactivity, modules, and best-practices.",
+        "url": "https://github.com/aimeegott/RStudio-Conf-Intermediate-Shiny"
     },
     {
-        "title": "Deep Learning Training",
-        "date": "?",
-        "description": "?"
+        "title": "Intro to Deep Learning",
+        "date": "August 2018 - 8 hours",
+        "description": "This was an internal course offered at Sandia that covered deep learning methods.",
+        "url": "https://github.com/EstebanGuillen/DeepLearningClass"
     },
     {
-        "title": "Docker",
-        "date": "?",
-        "description": "?"
+        "title": "Docker Fundamentals and Docker for Enterprise Developers",
+        "date": "Feb 19-22, 2018",
+        "description": "This course covered Docker fundamentals, Docker swarm, Docker compose files, YAML format, and more."
     },
     {
-        "title": "Shiny Training (taught by Matt Pickard)",
-        "date": "?",
-        "description": "?"
+        "title": "R and Shiny Training",
+        "date": "April 9-12, 2018",
+        "description": "Taught by Matt Pickard this covered the basics of R, dplyr, Shiny, and reactivity."
     }
 ]
