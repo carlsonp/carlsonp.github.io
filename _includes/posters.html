@@ -1,6 +1,6 @@
 {% assign posters = site.data.posters | sort:"year" | reverse %}
 {%- for poster in posters -%}
-
+  <div class="pub-poster">
   {% comment %}
     The include.resume flag and the below logic limits the posters displayed.
   {% endcomment %}
@@ -16,7 +16,7 @@
     &nbsp;({{ poster.year }}, {{ poster.month }}).
 
     {%- if poster.url -%}
-        [&nbsp;{{ poster.title }}]({{ poster.url | relative_url }}).
+        &nbsp;<a target="_blank" rel="noopener" href="{{ poster.url | relative_url }}">{{ poster.title }}</a>.
     {%- else -%}
         &nbsp;{{ poster.title }}.
     {%- endif -%}
@@ -26,6 +26,7 @@
     {%- if poster.award -%}
         &nbsp;<b>{{ poster.award }}</b>.
     {%- endif -%}
-  <br>
+  </div>
+  <div><br /></div>
   {% endif %}
 {%- endfor -%}

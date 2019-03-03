@@ -268,6 +268,41 @@
   margin-left: 1em;
  }
 
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 5mm;
+  margin: 8mm auto;
+  border: 1px #D3D3D3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+// https://css-tricks.com/almanac/properties/p/page-break/
+@media print {
+  .page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      box-shadow: initial;
+      background: initial;
+      display: block;
+  }
+  .heading-title {
+    page-break-after: avoid;
+  }
+  .resume-place {
+    page-break-after: avoid;
+  }
+  .pub-poster {
+    page-break-inside: avoid;
+  }
+  .resume-indent {
+    page-break-inside: avoid;
+  }
+}
+
 /**
  * Posts
  */

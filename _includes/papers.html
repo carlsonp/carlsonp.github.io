@@ -1,6 +1,6 @@
 {% assign papers = site.data.papers | sort:"year" | reverse %}
 {%- for paper in papers -%}
-
+  <div class="pub-poster">
   {% comment %}
     The include.resume flag and the below logic limits the posters displayed.
   {% endcomment %}
@@ -16,7 +16,7 @@
     &nbsp;{{ paper.title }}.
 
     {%- if paper.url -%}
-        &nbsp;In [{{ paper.container-title }}]({{ paper.url }}),
+        &nbsp;In <a target="_blank" rel="noopener" href="{{ paper.url }}">{{ paper.container-title }}</a>,
     {%- else -%}
         &nbsp;In {{ paper.container-title }},
     {%- endif -%}
@@ -29,6 +29,7 @@
     {%- endif -%}
 
     {% if include.cv == "true" %} <b>({{ paper.type }})</b>{% endif %}
-  <br>
+  </div>
+  <div><br /></div>
   {% endif %}
 {%- endfor -%}
