@@ -260,6 +260,10 @@
   float: right;
  }
 
+ .resume-item-title {
+  display: inline;
+ }
+
  .resume-timeperiod {
   float: right;
  }
@@ -292,7 +296,7 @@
   .heading-title {
     page-break-after: avoid;
   }
-  .resume-place {
+  .resume-place, .resume-timeperiod, .resume-item-title {
     page-break-after: avoid;
   }
   .pub-poster {

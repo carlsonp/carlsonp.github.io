@@ -37,7 +37,7 @@
     <div class="resume-place">{{ experience.place }}</div><div class="resume-location">{{ experience.city }}, {{ experience.state }}</div><br>
     {% for e in experience.experience %}
       {% if e.resume == null or e.resume != "false" %}
-        {{ e.title }}<div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
+        <div class="resume-item-title">{{ e.title }}</div><div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
         <div class="resume-indent">{{ e.description }}</div>
       {% endif %}
     {% endfor %}

@@ -38,7 +38,7 @@ Experience
 {% for experience in site.data.experience %}
     <div class="resume-place">{{ experience.place }}</div><div class="resume-location">{{ experience.city }}, {{ experience.state }}</div><br>
     {%- for e in experience.experience -%}
-        {{ e.title }}<div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
+        <div class="resume-item-title">{{ e.title }}</div><div class="resume-timeperiod">{{ e.timeperiod }}</div><br>
         <div class="resume-indent">{{ e.description }}</div>
     {%- endfor -%}
 {% endfor %}
@@ -163,21 +163,21 @@ Technical Skills
 <div>
 Programming Languages:
 {% for item in site.data.technical_skills.languages %}
-    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+    <a target="_blank" rel="noopener" href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
 {% endfor %}
 <br><br>
 Tools:
 {% for item in site.data.technical_skills.tools %}
-    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+    <a target="_blank" rel="noopener" href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
 {% endfor %}
 <br><br>
 Programs:
 {% for item in site.data.technical_skills.programs %}
-    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+    <a target="_blank" rel="noopener" href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
 {% endfor %}
 <br><br>
 Libraries:
 {% for item in site.data.technical_skills.libraries %}
-    <a href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
+    <a target="_blank" rel="noopener" href="{{ item.url }}">{{ item.name }}</a>{% if forloop.last != true %}, {% endif %}
 {% endfor %}
 </div>
