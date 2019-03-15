@@ -21,3 +21,9 @@ Built using [Jekyll](https://jekyllrb.com/).
 * Run `bundle check` to make sure all dependencies are satisfied.
 * Run `bundle outdated` to check for updates.
 * Run `bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html` to run the proofer that validates the site.
+* To generate Resume and CV PDFs:
+  * Install Chrome
+  * On Windows:
+    * Right click `create-pdfs.ps1` and select `Run with PowerShell`
+  * On Linux:
+    * Open terminal, run from root directory: `./create-pdfs.sh`
