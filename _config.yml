@@ -1,4 +1,5 @@
 # Welcome to Jekyll!
+# https://jekyllrb.com/docs/configuration/
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -30,12 +31,16 @@ plugins:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# to override the default setting.  These files will not be copied into the '_site' directory
+# for deployment.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - create-pdfs.ps1
+  - create-pdfs.sh
