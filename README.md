@@ -21,6 +21,7 @@ Built using [Jekyll](https://jekyllrb.com/).
 * Run `bundle check` to make sure all dependencies are satisfied.
 * Run `bundle outdated` to check for updates.
 * Run `bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html` to run the proofer that validates the site (seems to only work on Linux).
+* Run `jekyll doctor` and `jekyll build --profile` for health/setup checks and build performance.
 * To generate Resume and CV PDFs:
   * Install Chrome
   * On Windows:
