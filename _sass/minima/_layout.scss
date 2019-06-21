@@ -285,25 +285,32 @@
 
 // https://css-tricks.com/almanac/properties/p/page-break/
 @media print {
-  .page {
-      margin: 0;
-      border: initial;
-      border-radius: initial;
-      box-shadow: initial;
-      background: initial;
-      display: block;
+  html * {
+    display: none !important;
+    height: 0;
   }
-  .heading-title {
-    page-break-after: avoid;
-  }
-  .resume-place, .resume-timeperiod, .resume-item-title {
-    page-break-after: avoid;
-  }
-  .pub-poster {
-    page-break-inside: avoid;
-  }
-  .resume-indent {
-    page-break-inside: avoid;
+  
+  html {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        box-shadow: initial;
+        background: initial;
+        display: block;
+    }
+    .heading-title {
+      page-break-after: avoid;
+    }
+    .resume-place, .resume-timeperiod, .resume-item-title {
+      page-break-after: avoid;
+    }
+    .pub-poster {
+      page-break-inside: avoid;
+    }
+    .resume-indent {
+      page-break-inside: avoid;
+    }
   }
 }
 
