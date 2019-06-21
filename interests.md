@@ -10,7 +10,7 @@ header: true
 Many of my interests revolve around combining Computer Science and Psychology.
 
 * Human-Computer Interaction
-* Datamining
+* Data Science
 * Experimental Design
 * User Studies
 * Distributed Software Development
