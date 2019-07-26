@@ -13,3 +13,5 @@ header: true
 {% include projects_steam_analysis.html %}
 
 {% include projects_kaggle.html %}
+
+{% include projects_arma.html %}
