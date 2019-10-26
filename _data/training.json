@@ -1,5 +1,11 @@
 [
     {
+        "title": "Apache Spark Programming (DB 105)",
+        "date": "Sept 24-26, 2019",
+        "description": "This course covered the fundamentals of Apache Spark including Spark’s architecture and internals, the core APIs for using Spark, SQL and other high-level data access tools, as well as Spark’s streaming capabilities and machine learning APIs.",
+        "url": "https://academy.databricks.com/instructor-led-training/DB105"
+    },
+    {
         "title": "Intermediate Shiny (RStudio Conference 2019)",
         "date": "Jan 15-16, 2019",
         "description": "This covered the basics of Shiny, reactivity, modules, and best-practices.",
