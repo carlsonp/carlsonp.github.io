@@ -32,7 +32,7 @@ addons:
     - libcurl4-openssl-dev
 
 # https://github.com/gjtorikian/html-proofer
-# ignore vimeo.com, seems to have trouble on travis-ci build
+# ignore some sites via url-ignore, they seem to have trouble on travis-ci build
 script:
     - bundle exec jekyll build --future
-    - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore "/vimeo.com/"
+    - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore "/vimeo.com/,/researchgate.net/"
