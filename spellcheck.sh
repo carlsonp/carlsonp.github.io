@@ -4,7 +4,9 @@
 
 # https://stackoverflow.com/questions/12137431/test-if-a-command-outputs-an-empty-string
 
-for f in $(find . -name '*.html')
+# only search three folders (includes, site, layouts) since travis-ci downloads a bunch of stuff we don't want
+# to be recursing over those
+for f in $(find '_includes' '_site' '_layouts' -name '*.html')
 do
 	echo "Checking file: $f"
 	# -H is for running on HTML files
