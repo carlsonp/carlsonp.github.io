@@ -2,6 +2,7 @@
 
 # .travis.yml validator: http://lint.travis-ci.org/
 
+# https://docs.travis-ci.com/user/languages/ruby/
 language: ruby
 
 sudo: false
