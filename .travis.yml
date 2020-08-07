@@ -38,4 +38,4 @@ addons:
 script:
     - bundle exec jekyll build --future
     - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore "/vimeo.com/,/researchgate.net/"
-	- ./spellcheck.sh
+    - ./spellcheck.sh
