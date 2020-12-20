@@ -15,7 +15,7 @@ jobs:
       - run: rm Gemfile.lock
       # https://jekyllrb.com/docs/installation/ubuntu/
       - run: sudo apt-get install ruby-full build-essential zlib1g-dev
-      - run: gem install jekyll bundler
+      - run: sudo gem install jekyll bundler
       - run: sudo apt-get install libcurl4-openssl-dev aspell aspell-en
       # https://github.com/marketplace/actions/jekyll-actions
       # Use GitHub Actions' cache to shorten build times and decrease load on servers
