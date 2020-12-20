@@ -25,6 +25,8 @@ jobs:
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
           restore-keys: |
             ${{ runner.os }}-gems-
+      - name: Install site dependencies
+        run: bundle install
       - name: Build site
         run: bundle exec jekyll build --future
       - name: Check links
