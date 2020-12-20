@@ -3,7 +3,7 @@ carlsonp.github.io
 
 [https://carlsonp.github.io](https://carlsonp.github.io)
 
-[![Build Status](https://travis-ci.com/carlsonp/carlsonp.github.io.svg?branch=master)](https://travis-ci.com/carlsonp/carlsonp.github.io)
+[![Actions Status](https://github.com/carlsonp/carlsonp.github.io/workflows/github-actions/badge.svg)](https://github.com/carlsonp/carlsonp.github.io/actions)
 
 ### About
 
@@ -29,3 +29,7 @@ Built using [Jekyll](https://jekyllrb.com/).
     * Right click `create-pdfs.ps1` and select `Run with PowerShell`
   * On Linux:
     * Open terminal, run from root directory: `./create-pdfs.sh`
+
+## CI/CD
+
+* Automated build, checker, and spellcheck via Github Actions
