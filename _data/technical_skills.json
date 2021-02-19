@@ -85,6 +85,14 @@
     {
       "name": "Travis-CI",
       "url": "https://travis-ci.com/"
+    },
+    {
+      "name": "Github Actions",
+      "url": "https://github.com/features/actions"
+    },
+    {
+      "name": "Gitlab Runners",
+      "url": "https://docs.gitlab.com/runner/"
     }
   ],
   "programs": [
@@ -131,6 +139,22 @@
     {
       "name": "Axure",
       "url": "https://www.axure.com/"
+    },
+    {
+      "name": "Morae",
+      "url": "https://www.techsmith.com/tutorial-morae.html"
+    },
+    {
+      "name": "Tibco Data Virtualization",
+      "url": "https://www.tibco.com/products/data-virtualization"
+    },
+    {
+      "name": "Collibra",
+      "url": "https://www.collibra.com/"
+    },
+    {
+      "name": "yEd",
+      "url": "https://www.yworks.com/products/yed"
     }
   ],
   "libraries": [
@@ -173,6 +197,14 @@
     {
       "name": "Jekyll",
       "url": "https://jekyllrb.com/"
+    },
+    {
+      "name": "Spark",
+      "url": "https://spark.apache.org/"
+    },
+    {
+      "name": "Tidyverse",
+      "url": "https://www.tidyverse.org/"
     }
   ]
 }

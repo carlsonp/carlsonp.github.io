@@ -1,5 +1,11 @@
 [
     {
+        "title": "Coursera: Machine Learning",
+        "date": "August 14, 2020",
+        "description": "Online course on Machine Learning taught by Stanford professor Andrew Ng.",
+        "url": "https://www.coursera.org/learn/machine-learning"
+    },
+    {
         "title": "Apache Spark Programming (DB 105)",
         "date": "Sept 24-26, 2019",
         "description": "This course covered the fundamentals of Apache Spark including Spark’s architecture and internals, the core APIs for using Spark, SQL and other high-level data access tools, as well as Spark’s streaming capabilities and machine learning APIs."
