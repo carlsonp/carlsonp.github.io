@@ -1,5 +1,11 @@
 [
     {
+	    "title": "Scaled Agile Framework (SAFe) Product Owner / Product Manager Training",
+	    "date": "Jan 11-13, 2022",
+	    "description": "This training covered the Scaled Agile Framework for project management, requirements gathering, estimating work, and so on.",
+        "url": "https://www.scaledagileframework.com"
+    },
+    {
         "title": "Coursera: Machine Learning",
         "date": "August 14, 2020",
         "description": "Online course on Machine Learning taught by Stanford professor Andrew Ng.",
