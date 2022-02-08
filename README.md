@@ -1,15 +1,14 @@
-carlsonp.github.io
-==================
+# carlsonp.github.io
 
 [https://carlsonp.github.io](https://carlsonp.github.io)
 
 [![Actions Status](https://github.com/carlsonp/carlsonp.github.io/workflows/github-actions/badge.svg)](https://github.com/carlsonp/carlsonp.github.io/actions)
 
-### About
+## About
 
 The personal website for Patrick Carlson.
 
-### Setup and Build Instructions
+## Setup and Build Instructions
 
 Built using [Jekyll](https://jekyllrb.com/).
 
