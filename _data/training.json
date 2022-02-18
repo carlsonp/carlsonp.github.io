@@ -1,5 +1,10 @@
 [
     {
+        "title": "Cloudera Data Science Training",
+        "date": "Feb 14-17, 2022",
+        "description": "This course covered Spark, Cloudera Data Science workbench, supervised and unsupervised learning, and more."
+    },
+    {
 	    "title": "Scaled Agile Framework (SAFe) Product Owner / Product Manager Training",
 	    "date": "Jan 11-13, 2022",
 	    "description": "This training covered the Scaled Agile Framework for project management, requirements gathering, estimating work, and so on.",
