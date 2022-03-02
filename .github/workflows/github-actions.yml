@@ -11,7 +11,7 @@ jobs:
     env:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: rm Gemfile.lock
       # https://jekyllrb.com/docs/installation/ubuntu/
       - run: sudo apt-get install ruby-full build-essential zlib1g-dev libxslt-dev libxml2-dev
