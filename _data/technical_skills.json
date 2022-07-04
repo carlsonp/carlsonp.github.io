@@ -17,10 +17,6 @@
       "url": "http://www.r-project.org/"
     },
     {
-      "name": "C++",
-      "url": "http://www.cplusplus.com/"
-    },
-    {
       "name": "C#",
       "url": "http://msdn.microsoft.com/en-us/library/67ef8sbd.aspx"
     },
@@ -93,6 +89,10 @@
     {
       "name": "Gitlab Runners",
       "url": "https://docs.gitlab.com/runner/"
+    },
+    {
+      "name": "Ansible",
+      "url": "https://www.ansible.com/"
     }
   ],
   "programs": [
