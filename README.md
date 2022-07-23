@@ -19,7 +19,7 @@ Built using [Jekyll](https://jekyllrb.com/).
 * Run `bundle update --all` to update dependencies.  This will update the `Gemfile.lock` file.  Then run `bundle install` to install the updated dependencies.
 * Run `bundle check` to make sure all dependencies are satisfied.
 * Run `bundle outdated` to check for updates.
-* Run `bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html` to run the proofer that validates the site (seems to only work on Linux).
+* Run `bundle exec htmlproofer ./_site --only-4xx --enforce_https=false --ignore-urls="/vimeo.com/,/researchgate.net/"` to run the proofer that validates the site (seems to only work on Linux).
 * Run `bundle exec jekyll doctor` and `bundle exec jekyll build --profile` for health/setup checks and build performance.
 * Run `./spellcheck.sh` on Linux to look for spelling issues.  Add custom words to `.aspell.en.pws`.
 * To generate Resume and CV PDFs:
