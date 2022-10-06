@@ -93,6 +93,10 @@
     {
       "name": "Ansible",
       "url": "https://www.ansible.com/"
+    },
+    {
+      "name": "Terraform",
+      "url": "https://www.terraform.io/"
     }
   ],
   "programs": [
@@ -155,6 +159,10 @@
     {
       "name": "yEd",
       "url": "https://www.yworks.com/products/yed"
+    },
+    {
+      "name": "Denodo Data Virtualization",
+      "url": "https://www.denodo.com/"
     }
   ],
   "libraries": [

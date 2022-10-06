@@ -1,22 +1,32 @@
 [
   {
-	"title": "Sandia Insights - A Data Sciences Architecture and Framework - National Laboratories Information Technology Summit",
-	"date": "May 30, 2019"
+    "title": "Sandia Insights - A Data Sciences Architecture and Framework - National Laboratories Information Technology Summit",
+    "date": "Oct 17, 2022",
+    "url": "https://github.com/carlsonp/NLIT_2022_Sandia_Insights"
   },
   {
-	"title": "Viz Wars: Tableau vs. Shiny - National Laboratories Information Technology Summit",
-	"date": "May 29, 2019"
+    "title": "Sandia Insights - A Data Sciences Architecture and Framework - National Laboratories Information Technology Summit",
+    "date": "May 30, 2019",
+    "url": "https://github.com/carlsonp/NLIT_2019_Sandia_Insights"
+  },
+  {
+    "title": "Viz Wars: Tableau vs. Shiny - National Laboratories Information Technology Summit",
+    "date": "May 29, 2019",
+    "url": "https://github.com/carlsonp/NLIT-presentation-2019"
   },
   {
     "title": "IEEE VR 2015 (presented by Dr. Judy Vance), invited by Dr. Ed Swan, talk title: Virtual Training: Learning Transfer of Assembly Tasks",
-    "date": "March 23-27, 2015"
+    "date": "March 23-27, 2015",
+    "url": "http://hci.iastate.edu"
   },
   {
     "title": "IE 681 Cognitive Engineering, invited by Dr. Stephen Gilbert, talk on Open Source communities",
-    "date": "December 4, 2014"
+    "date": "December 4, 2014",
+    "url": "http://hci.iastate.edu"
   },
   {
     "title": "HCI 591 Seminar, talk on Open Source socialization",
-    "date": "November 16, 2012"
+    "date": "November 16, 2012",
+    "url": "http://hci.iastate.edu"
   }
 ]

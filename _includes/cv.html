@@ -98,7 +98,7 @@ Invited Presentations
 
 <div>
 {% for talk in site.data.invited_presentations %}
-    {{ talk.title }} - {{ talk.date }}<br><br>
+    <a target="_blank" rel="noopener" href="{{ talk.url }}">{{ talk.title }} - {{ talk.date }}</a><br><br>
 {% endfor %}
 </div>
 
