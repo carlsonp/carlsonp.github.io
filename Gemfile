@@ -30,8 +30,3 @@ gem "wdm", ">= 0.1.1" if Gem.win_platform?
 # for checking the overall site
 # https://github.com/gjtorikian/html-proofer
 gem "html-proofer"
-
-# fix security issue
-gem "nokogiri", ">= 1.11.0.rc4"
-
-gem "webrick", "~> 1.7"
