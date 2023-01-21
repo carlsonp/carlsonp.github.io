@@ -8,7 +8,7 @@
 
 The personal website for Patrick Carlson.
 
-## Setup and Build Instructions
+## Manual Setup and Build Instructions
 
 Built using [Jekyll](https://jekyllrb.com/).
 
@@ -28,6 +28,13 @@ Built using [Jekyll](https://jekyllrb.com/).
     * Right click `create-pdfs.ps1` and select `Run with PowerShell`
   * On Linux:
     * Open terminal, run from root directory: `./create-pdfs.sh`
+
+## Docker Build Instructions
+
+```shell
+# https://github.com/envygeeks/jekyll-docker/blob/master/README.md
+docker run --rm --volume=${PWD}:/srv/jekyll:Z --publish 4000:4000 jekyll/jekyll:latest jekyll serve
+```
 
 ## CI/CD
 
