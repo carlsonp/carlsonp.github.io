@@ -20,7 +20,6 @@ jobs:
       # https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
           bundler-cache: true
       - name: Bundle Environment
         run: bundle env
