@@ -203,5 +203,25 @@
     "page": "1-9",
     "title": "An evaluation of asymmetric interfaces for bimanual virtual assembly with haptics",
     "type": "Peer-Reviewed Journal Article"
+  },
+  {
+    "authors": [
+      {
+        "family": "Bruno",
+        "given": "Sean"
+      },
+      {
+        "family": "Carlson",
+        "given": "Patrick"
+      }
+    ],
+    "url": "http://dx.doi.org/10.5065/j0e4-ss70",
+    "container-title": "Proceedings of the 2023 Improving Scientific Software Conference",
+    "id": "Bruno-et-al-2023",
+    "resume": "true",
+    "year": 2023,
+    "page": "10-14",
+    "title": "Podman vs Docker comparison via R Shiny project deployment",
+    "type": "Peer-Reviewed Conference Paper"
   }
 ]
