@@ -97,6 +97,10 @@
     {
       "name": "Terraform",
       "url": "https://www.terraform.io/"
+    },
+    {
+      "name": "Bicep",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
     }
   ],
   "programs": [
