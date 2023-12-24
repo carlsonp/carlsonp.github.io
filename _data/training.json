@@ -1,5 +1,20 @@
 [
     {
+        "title": "Cloudera Data Governance Training",
+        "date": "Sept 18-19, 2023",
+        "description": "This course covered the Atlas data catalog and Ranger security and access control services in Cloudera."
+    },
+    {
+        "title": "Cloudera Spark Developer Training",
+        "date": "Sept 11-14, 2023",
+        "description": "This course covered Spark, Hive, HDFS, Cloudera Machine Learning, and more."
+    },
+    {
+        "title": "Cloudera Streaming Analytics Training",
+        "date": "Aug 21-23, 2023",
+        "description": "This course covered Flink and Kafka streaming technologies."
+    },
+    {
         "title": "Cloudera Data Science Training",
         "date": "Feb 14-17, 2022",
         "description": "This course covered Spark, Cloudera Data Science workbench, supervised and unsupervised learning, and more."
