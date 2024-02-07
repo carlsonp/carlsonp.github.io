@@ -293,6 +293,7 @@ DEPENDENCIES
   html-proofer
   jekyll-seo-tag (>= 2.1)
   tzinfo-data
+  uri (>= 0.13.0)
   webrick (>= 1.7)
 
 BUNDLED WITH

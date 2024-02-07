@@ -33,3 +33,6 @@ gem "html-proofer"
 
 # this fixes the Docker build
 gem "webrick", ">= 1.7"
+
+# this fixes the Docker build
+gem 'uri', '>=0.13.0'
