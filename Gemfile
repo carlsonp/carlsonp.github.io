@@ -23,4 +23,4 @@ gem "html-proofer"
 gem "webrick", ">= 1.7"
 
 # fix CI/CD Github actions build
-gem 'uri', '0.10.0'
+gem 'uri', '0.10.1'
