@@ -9,7 +9,7 @@ RUN echo 'Acquire::HTTP::Proxy "http://192.168.1.226:3142";' >> /etc/apt/apt.con
     echo 'Acquire::HTTPS::Proxy "false";' >> /etc/apt/apt.conf.d/01proxy
 
 RUN apt update && \
-    apt install -y --no-install-recommends nano ruby-full build-essential zlib1g-dev && \
+    apt install -y --no-install-recommends nano ruby-full build-essential zlib1g-dev libcurl4 aspell && \
     apt upgrade -y && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
