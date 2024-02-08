@@ -30,11 +30,11 @@ Built using [Jekyll](https://jekyllrb.com/).
   * On Linux:
     * Open terminal, run from root directory: `./create-pdfs.sh`
 
-## Docker Build Instructions
+## Docker Instructions
 
 ```shell
-# https://github.com/envygeeks/jekyll-docker/blob/master/README.md
-docker run --rm --volume=${PWD}:/srv/jekyll:Z --publish 4000:4000 jekyll/jekyll:latest jekyll serve
+docker build --pull -t carlsonp-github-website:latest .
+docker run -v "${PWD}:/jekyll" -p 4000:4000 carlsonp-github-website:latest
 ```
 
 ## CI/CD
