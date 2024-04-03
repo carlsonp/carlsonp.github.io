@@ -1,6 +1,14 @@
 [
     {
         "title": "National Laboratories Information Technology Summit",
+        "date": "April 8-11, 2024",
+        "city": "Seattle",
+        "state": "Washington",
+        "country": "USA",
+        "url": "http://www.fbcinc.com"
+    },
+    {
+        "title": "National Laboratories Information Technology Summit",
         "date": "June 27-30, 2023",
         "city": "Milwaukee",
         "state": "Wisconsin",
