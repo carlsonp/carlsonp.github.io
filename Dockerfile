@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:noble-20240423
 
 ENV LC_ALL="C.UTF-8"
 ENV LANG="en_US.UTF-8"
