@@ -28,6 +28,6 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build --future
       - name: Check links
-        run: bundle exec htmlproofer ./_site --only-4xx --no-enforce-https --ignore-urls="/vimeo.com/,/researchgate.net/,/tibco.com/"
+        run: bundle exec htmlproofer ./_site --only-4xx --no-enforce-https --ignore-urls="/vimeo.com/,/researchgate.net/,/tibco.com/,/java.com/"
       - name: Spellcheck
         run: ./spellcheck.sh
