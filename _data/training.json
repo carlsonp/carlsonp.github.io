@@ -1,5 +1,10 @@
 [
     {
+        "title": "Cloudera Apache Iceberg Training",
+        "date": "Aug 5-8, 2024",
+        "description": "This course covered Apache Iceberg, data snapshots, versioning, and more within Cloudera services."
+    },
+    {
         "title": "Cloudera Data Governance Training",
         "date": "Sept 18-19, 2023",
         "description": "This course covered the Atlas data catalog and Ranger security and access control services in Cloudera."
