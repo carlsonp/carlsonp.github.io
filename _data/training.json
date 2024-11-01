@@ -1,5 +1,10 @@
 [
     {
+        "title": "Enterprise AI Machine Learning Using Cloudera",
+        "date": "Oct 28-31, 2024",
+        "description": "This course covered generative AI, large language models, vector databases, and application development within Cloudera Machine Learning."
+    },
+    {
         "title": "Cloudera Apache Iceberg Training",
         "date": "Aug 5-8, 2024",
         "description": "This course covered Apache Iceberg, data snapshots, versioning, and more within Cloudera services."
