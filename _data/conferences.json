@@ -1,5 +1,13 @@
 [
     {
+        "title": "Red Hat Summit",
+        "date": "Oct 2, 2025",
+        "city": "Minneapolis",
+        "state": "Minnesota",
+        "country": "USA",
+        "url": "https://www.redhat.com/en/summit/connect/minneapolis-2025"
+    },
+    {
         "title": "National Laboratories Information Technology Summit",
         "date": "May 5-8, 2025",
         "city": "Denver",
