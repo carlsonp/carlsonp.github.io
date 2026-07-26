@@ -39,7 +39,7 @@ GEM
       fiber-annotation
       fiber-local (~> 1.1)
       json
-    csv (3.3.5)
+    csv (3.3.6)
     dnsruby (1.73.0)
       base64 (>= 0.2)
       logger (~> 1.6)
