@@ -75,7 +75,8 @@
 
 <div>
 {% for honor in site.data.honors %}
-  {% if honor.id == "isures" or honor.id == "cssenior" or honor.id == "mcm" or honor.id == "psichi" %}
+  {% if honor.id == "employeerecognitionawardfy2025" or honor.id == "labdirectorawardfy2025"
+   or honor.id == "employeerecognitionawardfy2024A" or honor.id == "employeerecognitionawardfy2024B" or honor.id == "employeerecognitionawardfy2024C" %}
     {{ honor.title }}<div class="resume-timeperiod">{{ honor.date }}</div><br>
   {% endif %}
 {% endfor %}
