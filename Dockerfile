@@ -9,7 +9,7 @@ RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloa
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt update && \
-    apt install -y --no-install-recommends nano ruby-full build-essential zlib1g-dev libcurl4 aspell && \
+    apt install -y --no-install-recommends nano ruby-full build-essential zlib1g-dev libcurl4 aspell aspell-en && \
     apt upgrade -y && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
