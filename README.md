@@ -38,3 +38,17 @@ docker exec -it <id> bash
 ## CI/CD
 
 * Automated build, checker, and spellcheck via Github Actions
+
+## Development
+
+Update pre-commit hooks
+
+```shell
+pre-commit autoupdate
+```
+
+## References
+
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Jekyll](https://jekyllrb.com/)
+* [Github Pages](https://docs.github.com/en/pages)
