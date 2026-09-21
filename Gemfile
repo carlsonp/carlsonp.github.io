@@ -4,8 +4,11 @@ gem "jekyll", "~> 4.4.1"
 
 # If you have any plugins, put them here
 group :jekyll_plugins do
-  gem "jekyll-feed", ">= 0.17"
-  gem "jekyll-seo-tag", ">= 2.8"
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-include-cache"
+  gem "jekyll-seo-tag"
 end
 
 gem "activesupport", ">= 4.1.11"

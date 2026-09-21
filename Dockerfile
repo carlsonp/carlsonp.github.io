@@ -26,3 +26,6 @@ RUN bundle install
 EXPOSE 4000
 
 CMD ["/bin/bash", "-c", "bundle update --all && bundle install && bundle exec jekyll serve --host=0.0.0.0 --watch"]
+
+# for debugging
+# CMD ["tail", "-f", "/dev/null"]
