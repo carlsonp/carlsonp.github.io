@@ -1,13 +1,103 @@
 [
     {
-        "id": "employeeretention",
+        "id": "employeerecognitionawardfy2025",
+        "title": "Nominated for Employee Recognition Award (ERA)",
+        "date": "March 2026"
+    },
+    {
+        "id": "spotaward2025A",
+        "title": "Sandia Spot Award - Data and AI Governance Framework",
+        "date": "October 2025"
+    },
+    {
+        "id": "spotaward2025B",
+        "title": "Sandia Spot Award - Data Sciences Department Transition Excellence",
+        "date": "July 2025"
+    },
+    {
+        "id": "labdirectorawardfy2025",
+        "title": "Nominated for Lab Director's Award - Sandia AI Chat Team",
+        "date": "May 2025"
+    },
+    {
+        "id": "thunderbirdkudos2025",
+        "title": "Thunderbird 'Kudos' Award From Fellow Sandian For Poster Preparation",
+        "date": "March 2025"
+    },
+    {
+        "id": "employeerecognitionawardfy2024A",
+        "title": "Nominated for Employee Recognition Award (ERA) - Hybrid Work Environment",
+        "date": "March 2025"
+    },
+    {
+        "id": "employeerecognitionawardfy2024B",
+        "title": "Awarded Employee Recognition Award (ERA) - Sandia AI Chat Team",
+        "date": "March 2025"
+    },
+    {
+        "id": "employeerecognitionawardfy2024C",
+        "title": "Awarded Employee Recognition Award (ERA) - Pioneering Machine Learning and Data Analytics Techniques to Mitigate Lab-wide Risk",
+        "date": "March 2025"
+    },
+    {
+        "id": "spotaward2024",
+        "title": "Sandia Spot Award - Data Architecture Partners",
+        "date": "November 2024"
+    },
+    {
+        "id": "employeerecognitionawardfy2023",
+        "title": "Nominated for Employee Recognition Award (ERA) - Risk Analytics: Time Reporting Codes/Time Charging Analytics Team",
+        "date": "June 2024"
+    },
+    {
+        "id": "thunderbirdkudos2023C",
+        "title": "Thunderbird 'Kudos' Award From Fellow Sandian For Data Integration Help",
+        "date": "July 2023"
+    },
+    {
+        "id": "employeeretention2023",
         "title": "Awarded Employee Retention Compensation for Select Employees",
         "date": "June 2023"
+    },
+    {
+        "id": "thunderbirdkudos2023B",
+        "title": "Thunderbird 'Kudos' Award From Fellow Sandian For Data Visualization Development",
+        "date": "March 2023"
+    },
+    {
+        "id": "employeerecognitionawardfy2022",
+        "title": "Nominated for Employee Recognition Award (ERA) - LDRD Demographics Team",
+        "date": "March 2023"
+    },
+    {
+        "id": "thunderbirdkudos2023A",
+        "title": "Thunderbird 'Kudos' Award From Fellow Sandian For Report Recovery",
+        "date": "December 2022"
     },
     {
         "id": "fedscoop50",
         "title": "Nominated for 'Most Inspiring Up & Comer' for FedScoop 50",
         "date": "September 2022"
+    },
+    {
+        "id": "spotaward2022",
+        "title": "Sandia Spot Award - Work Agreement Visualization for Senior Leadership Team",
+        "date": "September 2022"
+    },
+    {
+        "id": "thunderbirdkudos2022",
+        "title": "Thunderbird 'Kudos' Award From Fellow Sandian For Urgent Denodo Help",
+        "date": "July 2022"
+    },
+    {
+        "id": "employeerecognitionawardfy2020",
+        "title": "Nominated for Employee Recognition Award (ERA) - Data Integration Team",
+        "date": "March 2021"
+    },
+    {
+        "id": "employeerecognitionawardfy2019",
+        "title": "Nominated for Employee Recognition Award (ERA) - Facilities Centralized Space Management Modeling and Analysis Team",
+        "date": "March 2020"
     },
     {
         "id": "isures",
