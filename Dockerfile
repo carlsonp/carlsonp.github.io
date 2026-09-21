@@ -3,13 +3,17 @@ FROM ubuntu:26.04
 ENV LC_ALL="C.UTF-8"
 ENV LANG="en_US.UTF-8"
 ENV LANGUAGE="en_US.UTF-8"
+ENV DEBIAN_FRONTEND="noninteractive"
 
 # https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/reference.md#run---mounttypecache
 RUN rm -f /etc/apt/apt.conf.d/docker-clean; echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' > /etc/apt/apt.conf.d/keep-cache
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt update && \
-    apt install -y --no-install-recommends nano ruby-full build-essential zlib1g-dev libcurl4 aspell && \
+    apt install -y --no-install-recommends nano wget ruby-full build-essential zlib1g-dev libcurl4 aspell aspell-en && \
+    wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt-get install -y ./google-chrome-stable_current_amd64.deb && \
+    rm google-chrome-stable_current_amd64.deb && \
     apt upgrade -y && \
     apt autoremove -y && \
     rm -rf /var/lib/apt/lists/*
@@ -26,3 +30,6 @@ RUN bundle install
 EXPOSE 4000
 
 CMD ["/bin/bash", "-c", "bundle update --all && bundle install && bundle exec jekyll serve --host=0.0.0.0 --watch"]
+
+# for debugging
+# CMD ["tail", "-f", "/dev/null"]

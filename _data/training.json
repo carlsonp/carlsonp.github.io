@@ -1,5 +1,10 @@
 [
     {
+        "title": "GitOps: Continuous Delivery on Kubernetes with Flux (LFS269)",
+        "date": "Sept 10, 2026",
+        "description": "This course covered Flux and automating the deployment of applications to Kubernetes via Helm and Git-Ops principles."
+    },
+    {
         "title": "Enterprise AI Machine Learning Using Cloudera",
         "date": "Oct 28-31, 2024",
         "description": "This course covered generative AI, large language models, vector databases, and application development within Cloudera Machine Learning."

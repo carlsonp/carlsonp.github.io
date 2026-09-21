@@ -1,3 +1,3 @@
 #!/bin/bash
-google-chrome --headless --disable-gpu --print-to-pdf=/home/carlsonp/src/carlsonp.github.io/files/resume_Carlson.pdf http://127.0.0.1:4000/resume/
-google-chrome --headless --disable-gpu --print-to-pdf=/home/carlsonp/src/carlsonp.github.io/files/CV_Carlson.pdf http://127.0.0.1:4000/cv/
+google-chrome --window-size=1920,1080 --no-pdf-header-footer --no-sandbox --headless=new --disable-dev-shm-usage --disable-gpu --print-to-pdf=./files/resume_Carlson.pdf http://127.0.0.1:4000/resume/
+google-chrome --window-size=1920,1080 --no-pdf-header-footer --no-sandbox --headless=new --disable-dev-shm-usage --disable-gpu --print-to-pdf=./files/CV_Carlson.pdf http://127.0.0.1:4000/cv/

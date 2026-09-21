@@ -1,10 +1,14 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 4.4.1"
 
 # If you have any plugins, put them here
 group :jekyll_plugins do
-  gem "jekyll-seo-tag", ">= 2.1"
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-paginate"
+  gem "jekyll-include-cache"
+  gem "jekyll-seo-tag"
 end
 
 gem "activesupport", ">= 4.1.11"

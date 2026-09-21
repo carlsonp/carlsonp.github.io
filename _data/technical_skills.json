@@ -101,6 +101,14 @@
     {
       "name": "Bicep",
       "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview"
+    },
+    {
+      "name": "Helm",
+      "url": "https://helm.sh/"
+    },
+    {
+      "name": "Kubernetes",
+      "url": "https://www.cncf.io/projects/kubernetes/"
     }
   ],
   "programs": [
