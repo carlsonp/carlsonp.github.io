@@ -2,7 +2,7 @@
 
 [https://carlsonp.github.io](https://carlsonp.github.io)
 
-[![Actions Status](https://github.com/carlsonp/carlsonp.github.io/workflows/github-actions/badge.svg)](https://github.com/carlsonp/carlsonp.github.io/actions)
+[![Deploy Jekyll to GitHub Pages](https://github.com/carlsonp/carlsonp.github.io/actions/workflows/deploy-github-pages.yml/badge.svg)](https://github.com/carlsonp/carlsonp.github.io/actions/workflows/deploy-github-pages.yml)
 
 ## About
 
